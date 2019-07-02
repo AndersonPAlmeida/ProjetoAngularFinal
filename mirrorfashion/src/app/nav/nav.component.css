@@ -1,0 +1,50 @@
+.menu-opcoes ul {
+    font-size: 15px;
+}
+
+.menu-opcoes a {
+    color: #003366;
+}
+
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu-opcoes{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-opcoes a:hover {
+    color: #007DC6;
+}
+
+.menu-opcoes a:active {
+    color: #867DC6;
+}
+
+@media (max-width: 320px){
+    .menu-opcoes {
+        position: static;
+        text-align: center;
+    }
+
+    .menu-opcoes ul li {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 939px){
+    .menu-opcoes {
+        position: static;
+        text-align: center;
+    }
+
+    .menu-opcoes ul li {
+        display: inline-block;
+        margin: 5px;
+    }
+}
