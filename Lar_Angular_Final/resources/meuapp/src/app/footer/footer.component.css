@@ -1,0 +1,10 @@
+li a img{
+    height: 40px;
+    width: 40px;
+    display: block;
+}
+
+.navbar{
+    margin-top: 10px;
+    padding: 1.2rem 1rem;
+}
