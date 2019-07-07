@@ -6,6 +6,7 @@ import { FormLoginComponent } from './form-login/form-login.component';
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'login', component: FormLoginComponent}
+  //{path: 'produtos/:id', } //falta o componente
 ];
 
 @NgModule({
