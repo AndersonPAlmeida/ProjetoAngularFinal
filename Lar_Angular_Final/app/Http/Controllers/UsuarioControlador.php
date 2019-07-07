@@ -33,6 +33,11 @@ class UsuarioControlador extends Controller
      */
     public function show($id)
     {
-        //
+        $info = Usuario::find($id);
+
+        if (isset($info)) {
+            return $info;
+        }
+        return response('Produto não encontrado', 404);
     }
 }
