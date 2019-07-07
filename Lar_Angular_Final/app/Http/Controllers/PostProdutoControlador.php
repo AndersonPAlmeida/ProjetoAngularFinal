@@ -38,6 +38,8 @@ class PostProdutoControlador extends Controller
         $post->arquivo = $path;
 
         $post->save();
+
+        return response($post, 200);
     }
 
     /**
