@@ -77,6 +77,17 @@ module.exports = "<a routerLink=\"/produtos/1\">\r\n    <figure class=\"figure\"
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/sobre/sobre.component.html":
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/sobre/sobre.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "    <!-- <img  src = \" img / logo.png \"  alt = \" Logo da Mirror Fashion \"> -->\r\n\t<h1> Mirror Fashion </h1>\r\n\t<p>\r\n\t\tA <strong> Mirror Fashion </strong> é a maior empresa de comércio eletrônico no segmento de\r\n\t\tmoda em todo o mundo. Fundada em 1932, possui filiais em 124 países, sendo líder de\r\n\t\tmercado com mais de 90% de participação em 118 deles.\r\n\t</p>\r\n\t<p>\r\n\t\tNosso centro de distribuição fica em <strong> Jacarezinho, no Paraná </strong>.\r\n\t\tDe lá, saem 48 aviões que distribuem os produtos às casas do mundo todo. Nosso centro de distribuição:\r\n\t</p>\r\n\t<figure  id = \" centro-distribuicao \">\r\n\t\t<!-- <img  src = \" img / centro-distribuicao.png \"  alt = \" Foto do centro de distribuição da Mirror Fashion \"> -->\r\n\t\t<figcaption> Centro de distribuição da Mirror Fashion </figcaption>\r\n\t</figure>\r\n\t<p>\r\n\t\tCompre suas roupas e acessórios na Mirror Fashion. Acesse <a  href = \" index.html \"> nossa loja </a> ou entre em contato\r\n\t\tse tiver dúvidas. Conheça também nossa <a  href = \" #historia \"> história </a> e nossos <a  href = \" #diferencias \"> diferenciais</a>.\r\n\t</p>\r\n\r\n\t<h2  id = \" historia \" > História </h2>\r\n\r\n\t<figure  id = \" familia-pelho \">\r\n\t\t<!-- <img  src = \" img / familia-pelho.jpg \"  alt = \" Foto da família Pelho \"> -->\r\n\t\t<figcaption> Família Pelho </figcaption>\r\n\t</figure>\r\n\t<p>\r\n\t\tA fundação em 1932 ocorreu no momento da descoberta econômica do interior do Paraná. A\r\n\t\tfamília Pelho, tradicional da região, investiu todas as suas economias nessa nova\r\n\t\tiniciativa, revolucionária para a época. O fundador <em> Eduardo Simões Pelho </em>,\r\n\t\tdotado de particular visão administrativa, guiou os negócios da empresa durante mais\r\n\t\tde 50 anos, muitos deles ao lado do seu filho <em> ES Pelho Filho </em>, atual CEO.\r\n\t\tO nome da empresa é inspirado no nome da família.\r\n\t</p>\r\n\t<p>\r\n\t\tO crescimento da empresa foi praticamente instantâneo. Nos primeiros 5 anos, já atendia\r\n\t\t18 países. Bateu a marca de 100 países em apenas 15 anos de existência. Até hoje, já\r\n\t\tatendeu 740 milhões de usuários diferentes, em bilhões de diferentes pedidos.\r\n\t</p>\r\n\t<p>\r\n\t\tO crescimento em número de funcionários é também assombroso. Hoje, é a maior empregadora\r\n\t\tdo Brasil, mas mesmo após apenas 5 anos da sua existência, já possuía 30 mil funcionários.\r\n\t\tFora do Brasil, há 240 mil funcionários, além de 890 mil brasileiros em instalações\r\n\t\tJacarezinho e nos escritórios em todo país.\r\n\t</p>\r\n\t<p>\r\n\t\tDada a importância econômica da empresa para o Brasil, a família Pelho já recebeu diversos\r\n\t\tprêmios, homenagens e condecorações. Todos os presidentes do Brasil já visitaram as instalações\r\n\t\tda Mirror Fashion, além de presidentes da União Européia, Ásia e o\r\n\t\tsecretário-geral da ONU.\r\n\t</p>\r\n\r\n\t<h2  id = \" diferenciais \"> Diferenciais </h2>\r\n\t<ul>\r\n\t\t<li> Menor preço do varejo, garantido! </li>\r\n\t\t<li> Se você achar uma loja mais barata, leva o produto de graça! </li>\r\n\t\t<li> Pague em reais, dólares, euros ou bitcoins! </li>\r\n\t\t<li> Todas as compras com frete grátis para o mundo todo! </li>\r\n\t\t<li> Maior comércio eletrônico de moda do mundo! </li>\r\n\t\t<li> Atendimento via telefone, email, chat, Twitter, Facebook, carta, fax e telegrama! </li>\r\n\t\t<li> Presente em 124 países! </li>\r\n\t\t<li> Mais de um milhão de pessoas em todo o mundo! </li>\r\n\t</ul>\r\n"
+
+/***/ }),
+
 /***/ "./src/$$_lazy_route_resource lazy recursive":
 /*!**********************************************************!*\
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
@@ -115,6 +126,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form-login/form-login.component */ "./src/app/form-login/form-login.component.ts");
+/* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
+
 
 
 
@@ -122,8 +135,9 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-    { path: 'login', component: _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_4__["FormLoginComponent"] }
+    { path: 'login', component: _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_4__["FormLoginComponent"] },
     //{path: 'produtos/:id', } //falta o componente
+    { path: 'sobre', component: _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__["SobreComponent"] }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -216,6 +230,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _post_produtos_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./post-produtos.service */ "./src/app/post-produtos.service.ts");
 /* harmony import */ var _login_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./login.service */ "./src/app/login.service.ts");
 /* harmony import */ var _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./nav-funcao/nav-funcao.component */ "./src/app/nav-funcao/nav-funcao.component.ts");
+/* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
+
 
 
 
@@ -242,7 +258,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_9__["FormLoginComponent"],
             _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
             _post_produto_post_produto_component__WEBPACK_IMPORTED_MODULE_11__["PostProdutoComponent"],
-            _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_14__["NavFuncaoComponent"]
+            _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_14__["NavFuncaoComponent"],
+            _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__["SobreComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -668,6 +685,49 @@ PostProduto.ctorParameters = () => [
     { type: String },
     { type: Number }
 ];
+
+
+/***/ }),
+
+/***/ "./src/app/sobre/sobre.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/sobre/sobre.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "body{\r\n    color: #333333;\r\n    font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif;\r\n}\r\n\r\nh1{\r\n    /* background-image: url(../img/sobre-background.jpg); */\r\n    padding: 10px;\r\n}\r\n\r\nh2{\r\n    border-bottom: 2px solid #333333;\r\n    margin-top: 30px;\r\n}\r\n\r\np{\r\n    padding: 0 45px;\r\n    text-indent: 15px;\r\n}\r\n\r\nfigure{\r\n    background-color: #F2EDED;\r\n    border: 1px solid #ccc;\r\n    text-align: center;\r\n    padding: 15px;\r\n    margin: 30px;\r\n}\r\n\r\nfigcaption{\r\n    font-style: italic;\r\n    margin-top: 10px;\r\n}\r\n\r\n#centro-distribuicao{\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    width: 550px;\r\n}\r\n\r\n#rodape {\r\n    color: #777;\r\n    margin: 30px 0;\r\n    padding: 30px 0;\r\n}\r\n\r\n#rodape img {\r\n    margin-right: 30px;\r\n    vertical-align: middle;\r\n    width: 94px;\r\n}\r\n\r\n#familia-pelho {\r\n    float: right;\r\n    margin: 0 0 10px 10px;\r\n}\r\n\r\np::first-letter {\r\n    font-weight: bold;\r\n}\r\n\r\nh1 + p {\r\n    text-indent: 0;\r\n}\r\n\r\np::first-line {\r\n    font-variant: small-caps;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc29icmUvc29icmUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGNBQWM7SUFDZCwrREFBK0Q7QUFDbkU7O0FBRUE7SUFDSSx3REFBd0Q7SUFDeEQsYUFBYTtBQUNqQjs7QUFFQTtJQUNJLGdDQUFnQztJQUNoQyxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLHNCQUFzQjtJQUN0QixrQkFBa0I7SUFDbEIsYUFBYTtJQUNiLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksV0FBVztJQUNYLGNBQWM7SUFDZCxlQUFlO0FBQ25COztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLHNCQUFzQjtJQUN0QixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxZQUFZO0lBQ1oscUJBQXFCO0FBQ3pCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksY0FBYztBQUNsQjs7QUFFQTtJQUNJLHdCQUF3QjtBQUM1QiIsImZpbGUiOiJzcmMvYXBwL3NvYnJlL3NvYnJlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5e1xyXG4gICAgY29sb3I6ICMzMzMzMzM7XHJcbiAgICBmb250LWZhbWlseTogXCJMdWNpZGEgU2FucyBVbmljb2RlXCIsIFwiTHVjaWRhIEdyYW5kZVwiLCBzYW5zLXNlcmlmO1xyXG59XHJcblxyXG5oMXtcclxuICAgIC8qIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi9pbWcvc29icmUtYmFja2dyb3VuZC5qcGcpOyAqL1xyXG4gICAgcGFkZGluZzogMTBweDtcclxufVxyXG5cclxuaDJ7XHJcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgIzMzMzMzMztcclxuICAgIG1hcmdpbi10b3A6IDMwcHg7XHJcbn1cclxuXHJcbnB7XHJcbiAgICBwYWRkaW5nOiAwIDQ1cHg7XHJcbiAgICB0ZXh0LWluZGVudDogMTVweDtcclxufVxyXG5maWd1cmV7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjJFREVEO1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIHBhZGRpbmc6IDE1cHg7XHJcbiAgICBtYXJnaW46IDMwcHg7XHJcbn1cclxuXHJcbmZpZ2NhcHRpb257XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xyXG59XHJcblxyXG4jY2VudHJvLWRpc3RyaWJ1aWNhb3tcclxuICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xyXG4gICAgd2lkdGg6IDU1MHB4O1xyXG59XHJcblxyXG4jcm9kYXBlIHtcclxuICAgIGNvbG9yOiAjNzc3O1xyXG4gICAgbWFyZ2luOiAzMHB4IDA7XHJcbiAgICBwYWRkaW5nOiAzMHB4IDA7XHJcbn1cclxuXHJcbiNyb2RhcGUgaW1nIHtcclxuICAgIG1hcmdpbi1yaWdodDogMzBweDtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbiAgICB3aWR0aDogOTRweDtcclxufVxyXG5cclxuI2ZhbWlsaWEtcGVsaG8ge1xyXG4gICAgZmxvYXQ6IHJpZ2h0O1xyXG4gICAgbWFyZ2luOiAwIDAgMTBweCAxMHB4O1xyXG59XHJcblxyXG5wOjpmaXJzdC1sZXR0ZXIge1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbn1cclxuXHJcbmgxICsgcCB7XHJcbiAgICB0ZXh0LWluZGVudDogMDtcclxufVxyXG5cclxucDo6Zmlyc3QtbGluZSB7XHJcbiAgICBmb250LXZhcmlhbnQ6IHNtYWxsLWNhcHM7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/sobre/sobre.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/sobre/sobre.component.ts ***!
+  \******************************************/
+/*! exports provided: SobreComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SobreComponent", function() { return SobreComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let SobreComponent = class SobreComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+SobreComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-sobre',
+        template: __webpack_require__(/*! raw-loader!./sobre.component.html */ "./node_modules/raw-loader/index.js!./src/app/sobre/sobre.component.html"),
+        styles: [__webpack_require__(/*! ./sobre.component.css */ "./src/app/sobre/sobre.component.css")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], SobreComponent);
+
 
 
 /***/ }),
