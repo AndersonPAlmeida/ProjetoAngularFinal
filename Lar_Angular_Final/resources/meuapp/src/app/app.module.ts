@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { PostProdutoComponent } from './post-produto/post-produto.component';
 import { PostProdutosService } from './post-produtos.service';
 import { LoginService } from './login.service';
+import { SobreComponent } from './sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginService } from './login.service';
     NavComponent,
     FormLoginComponent,
     HomeComponent,
-    PostProdutoComponent
+    PostProdutoComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
