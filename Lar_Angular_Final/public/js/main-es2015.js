@@ -18,7 +18,7 @@ module.exports = "<!-- Menu -->\r\n<app-nav></app-nav>\r\n<app-nav-funcao *ngIf=
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"container\">\n    <div *ngIf=\"mostrarAlert\" class=\"alert alert-danger\" role=\"alert\">\n        Erro ao realizar o cadstro do cliente. Verifique os Dados !!!\n    </div>\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n        <label for=\"inputEmail4\">Email</label>\n        <input [(ngModel)]=\"usuario.email\" type=\"email\" class=\"form-control\" id=\"inputEmail4\" placeholder=\"Email\">\n        </div>\n        <div class=\"form-group col-md-6\">\n        <label for=\"inputPassword4\">Password</label>\n        <input [(ngModel)]=\"usuario.senha\" type=\"password\" class=\"form-control\" id=\"inputPassword4\" placeholder=\"Senha\">\n        </div>\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputAddress\">Nome</label>\n        <input [(ngModel)]=\"usuario.nome\" type=\"text\" class=\"form-control\" id=\"inputAddress\" placeholder=\"Gabriel\">\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputAddress2\">CPF</label>\n        <input [(ngModel)]=\"usuario.cpf\" type=\"text\" class=\"form-control\" id=\"inputAddress2\" placeholder=\"000.111.222-85\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-success\" (click)=\"salvar()\">Sign in</button>\n</div>"
+module.exports = "\n<div class=\"container\">\n    <div *ngIf=\"mostrarAlert\" class=\"alert alert-danger\" role=\"alert\">\n        Erro ao realizar o cadastro do cliente. Verifique os Dados !!!\n    </div>\n\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n        <label for=\"inputEmail4\">Email</label>\n        <input [(ngModel)]=\"usuario.email\" type=\"email\" class=\"form-control\" id=\"inputEmail4\" placeholder=\"Email\">\n        </div>\n        <div class=\"form-group col-md-6\">\n        <label for=\"inputPassword4\">Password</label>\n        <input [(ngModel)]=\"usuario.senha\" type=\"password\" class=\"form-control\" id=\"inputPassword4\" placeholder=\"Senha\">\n        </div>\n    </div>\n\n    <div class=\"form-group\">\n        <label for=\"inputAddress\">Nome</label>\n        <input [(ngModel)]=\"usuario.nome\" type=\"text\" class=\"form-control\" id=\"inputAddress\" placeholder=\"Gabriel\">\n    </div>\n\n    <div class=\"form-group\">\n        <label for=\"inputAddress2\">CPF</label>\n        <input [(ngModel)]=\"usuario.cpf\" type=\"text\" class=\"form-control\" id=\"inputAddress2\" placeholder=\"000.111.222-85\">\n    </div>\n\n    <button type=\"submit\" class=\"btn btn-success\" (click)=\"salvar()\">Sign in</button>\n</div>"
 
 /***/ }),
 
@@ -44,6 +44,17 @@ module.exports = "<div class=\"container\">\r\n    <div class=\"row\">    \r\n  
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/form-produto/form-produto.component.html":
+/*!************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/form-produto/form-produto.component.html ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputProduto\">Produto</label>\n            <input type=\"text\" class=\"form-control\" id=\"inputProduto\" placeholder=\"Mesa\">\n        </div>\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputPreco\">Preço</label>\n            <input type=\"number\" class=\"form-control\" id=\"inputPreco\" placeholder=\"250,00\">\n        </div>\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputDetalhes\">Detalhes</label>\n        <input type=\"text\" class=\"form-control\" id=\"inputDetalhes\" placeholder=\"O produto é...\">\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputModelo\">Modelo</label>\n        <input type=\"text\" class=\"form-control\" id=\"inputModelo\" placeholder=\"Cardigã 7405\">\n    </div>\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputMaterial\">Material</label>\n            <input type=\"text\" class=\"form-control\" id=\"inputMaterial\" placeholder=\"Algodão\">\n        </div>\n        <div class=\"form-group col-md-4\">\n            <label for=\"inputLavagem\">Lavagem</label>\n            <input type=\"text\" class=\"form-control\" id=\"inputLavagem\" placeholder=\"Lavar na máquina\">\n        </div>\n    </div>\n\n    <div class=\"form-row\">\n        <div class=\"custom-file col-md-6\">\n            <input type=\"file\" class=\"custom-file-input\" id=\"validatedCustomFile\" required>\n            <label class=\"custom-file-label\" for=\"validatedCustomFile\">Escolha um arquivo de foto...</label>\n            <div class=\"invalid-feedback\">Adicionar arquivo de foto...</div>\n        </div>\n    </div>\n    <br>\n    <div class=\"form-row\">\n        <button type=\"submit\" class=\"btn btn-primary\">Sign in</button>\n    </div>\n</div>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/home/home.component.html":
 /*!********************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/home/home.component.html ***!
@@ -62,7 +73,7 @@ module.exports = "<div class=\"container\">\r\n    <!-- Inicio linha destaque   
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <ul class=\"nav justify-content-center\">\r\n        <li class=\"nav-item\">\r\n            <a class=\"nav-link\" href=\"#\">Cadastrar Produto</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n            <a class=\"nav-link\" routerLink=\"/cliente\">Cadastrar Cliente</a>\r\n        </li>        \r\n    </ul>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <ul class=\"nav justify-content-center\">\r\n        <li class=\"nav-item\">\r\n            <a class=\"nav-link\" routerLink=\"/produto\">Cadastrar Produto</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n            <a class=\"nav-link\" routerLink=\"/cliente\">Cadastrar Cliente</a>\r\n        </li>        \r\n    </ul>\r\n</div>"
 
 /***/ }),
 
@@ -139,6 +150,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form-login/form-login.component */ "./src/app/form-login/form-login.component.ts");
 /* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
 /* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
+/* harmony import */ var _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./form-produto/form-produto.component */ "./src/app/form-produto/form-produto.component.ts");
+
 
 
 
@@ -151,7 +164,8 @@ const routes = [
     { path: 'login', component: _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_4__["FormLoginComponent"] },
     //{path: 'produtos/:id', } //falta o componente
     { path: 'sobre', component: _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__["SobreComponent"] },
-    { path: 'cliente', component: _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_6__["ClienteComponent"] }
+    { path: 'cliente', component: _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_6__["ClienteComponent"] },
+    { path: 'produto', component: _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_7__["FormProdutoComponent"] }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -246,6 +260,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./nav-funcao/nav-funcao.component */ "./src/app/nav-funcao/nav-funcao.component.ts");
 /* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
 /* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
+/* harmony import */ var _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./form-produto/form-produto.component */ "./src/app/form-produto/form-produto.component.ts");
+
 
 
 
@@ -276,7 +292,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _post_produto_post_produto_component__WEBPACK_IMPORTED_MODULE_11__["PostProdutoComponent"],
             _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_14__["NavFuncaoComponent"],
             _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__["SobreComponent"],
-            _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_16__["ClienteComponent"]
+            _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_16__["ClienteComponent"],
+            _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_17__["FormProdutoComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -455,6 +472,49 @@ FormLoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/form-produto/form-produto.component.css":
+/*!*********************************************************!*\
+  !*** ./src/app/form-produto/form-produto.component.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Zvcm0tcHJvZHV0by9mb3JtLXByb2R1dG8uY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/form-produto/form-produto.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/form-produto/form-produto.component.ts ***!
+  \********************************************************/
+/*! exports provided: FormProdutoComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormProdutoComponent", function() { return FormProdutoComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let FormProdutoComponent = class FormProdutoComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+FormProdutoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-form-produto',
+        template: __webpack_require__(/*! raw-loader!./form-produto.component.html */ "./node_modules/raw-loader/index.js!./src/app/form-produto/form-produto.component.html"),
+        styles: [__webpack_require__(/*! ./form-produto.component.css */ "./src/app/form-produto/form-produto.component.css")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], FormProdutoComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/home/home.component.css":
 /*!*****************************************!*\
   !*** ./src/app/home/home.component.css ***!
@@ -556,7 +616,6 @@ let LoginService = class LoginService {
         uploadUser.append('nome', user.nome);
         uploadUser.append('cpf', user.cpf);
         this.http.post("/api/usuario", uploadUser, { reportProgress: true, observe: 'events' }).subscribe((event) => {
-            console.log(event);
             /* if (event.headers.status === 200) {
               this.router.navigate(['/']);
             } */
