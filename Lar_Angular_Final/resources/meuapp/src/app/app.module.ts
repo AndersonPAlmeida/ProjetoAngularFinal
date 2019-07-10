@@ -1,9 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
@@ -31,14 +29,8 @@ import { ClienteComponent } from './cliente/cliente.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, 
-    ReactiveFormsModule,
-    HttpClientModule,
   ],
-  providers: [
-    PostProdutosService,
-    LoginService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
