@@ -1,2 +1,6 @@
+# *
+# !.gitignore
 *
+!imgFixa
+!imgFixa/*
 !.gitignore
