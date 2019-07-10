@@ -19,11 +19,13 @@ class UsuarioControlador extends Controller
 
         $novo->nome = $request->nome;
         $novo->email = $request->email;
+        $novo->cpf = $request->cpf;
         $novo->senha = $request->senha;
 
         $novo->save();
 
-        return response($novo, 200);
+        // return response($novo, 200);
+        return 200;
     }
 
     /**

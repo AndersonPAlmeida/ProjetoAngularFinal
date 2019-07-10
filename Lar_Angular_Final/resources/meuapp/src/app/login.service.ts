@@ -10,6 +10,7 @@ export class LoginService {
   public usuarios: Usuario[] = [];
   // private autenticador: boolean = false;
   mostrarMenu = new EventEmitter<boolean>();
+  mostrarAlert = new EventEmitter<boolean>();
 
   constructor( 
     private router: Router,
@@ -27,5 +28,29 @@ export class LoginService {
         this.router.navigate(['/']);
       }
     );
+  }
+
+  cadastrar(user: Usuario){   
+    const uploadUser = new FormData();
+
+    uploadUser.append('email', user.email);
+    uploadUser.append('senha', user.senha);
+    uploadUser.append('nome', user.nome);
+    uploadUser.append('cpf', user.cpf);
+
+    this.http.post("/api/usuario", uploadUser, {reportProgress: true, observe: 'events'}).subscribe(
+      (event:any) =>{
+        /* if (event.headers.status === 200) {
+          this.router.navigate(['/']);
+        } */
+        if (event.body == 200) {
+          this.mostrarAlert.emit(false);
+          this.router.navigate(['/']);
+        }
+        else{
+          this.mostrarAlert.emit(true);
+        }
+      }
+    )
   }
 }

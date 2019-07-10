@@ -11,6 +11,17 @@ module.exports = "<!-- Menu -->\r\n<app-nav></app-nav>\r\n<app-nav-funcao *ngIf=
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/cliente/cliente.component.html":
+/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/cliente/cliente.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<div class=\"container\">\n    <div *ngIf=\"mostrarAlert\" class=\"alert alert-danger\" role=\"alert\">\n        Erro ao realizar o cadstro do cliente. Verifique os Dados !!!\n    </div>\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n        <label for=\"inputEmail4\">Email</label>\n        <input [(ngModel)]=\"usuario.email\" type=\"email\" class=\"form-control\" id=\"inputEmail4\" placeholder=\"Email\">\n        </div>\n        <div class=\"form-group col-md-6\">\n        <label for=\"inputPassword4\">Password</label>\n        <input [(ngModel)]=\"usuario.senha\" type=\"password\" class=\"form-control\" id=\"inputPassword4\" placeholder=\"Senha\">\n        </div>\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputAddress\">Nome</label>\n        <input [(ngModel)]=\"usuario.nome\" type=\"text\" class=\"form-control\" id=\"inputAddress\" placeholder=\"Gabriel\">\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputAddress2\">CPF</label>\n        <input [(ngModel)]=\"usuario.cpf\" type=\"text\" class=\"form-control\" id=\"inputAddress2\" placeholder=\"000.111.222-85\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-success\" (click)=\"salvar()\">Sign in</button>\n</div>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/footer/footer.component.html":
 /*!************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/footer/footer.component.html ***!
@@ -51,7 +62,7 @@ module.exports = "<div class=\"container\">\r\n    <!-- Inicio linha destaque   
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <ul class=\"nav justify-content-center\">\r\n        <li class=\"nav-item\">\r\n            <a class=\"nav-link\" href=\"#\">Cadastrar Produto</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n            <a class=\"nav-link\" href=\"#\">Cadastrar Cliente</a>\r\n        </li>        \r\n    </ul>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <ul class=\"nav justify-content-center\">\r\n        <li class=\"nav-item\">\r\n            <a class=\"nav-link\" href=\"#\">Cadastrar Produto</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n            <a class=\"nav-link\" routerLink=\"/cliente\">Cadastrar Cliente</a>\r\n        </li>        \r\n    </ul>\r\n</div>"
 
 /***/ }),
 
@@ -127,6 +138,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form-login/form-login.component */ "./src/app/form-login/form-login.component.ts");
 /* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
+/* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
+
 
 
 
@@ -137,7 +150,8 @@ var routes = [
     { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
     { path: 'login', component: _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_4__["FormLoginComponent"] },
     //{path: 'produtos/:id', } //falta o componente
-    { path: 'sobre', component: _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__["SobreComponent"] }
+    { path: 'sobre', component: _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__["SobreComponent"] },
+    { path: 'cliente', component: _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_6__["ClienteComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -236,6 +250,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _login_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./login.service */ "./src/app/login.service.ts");
 /* harmony import */ var _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./nav-funcao/nav-funcao.component */ "./src/app/nav-funcao/nav-funcao.component.ts");
 /* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
+/* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
+
 
 
 
@@ -265,7 +281,8 @@ var AppModule = /** @class */ (function () {
                 _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
                 _post_produto_post_produto_component__WEBPACK_IMPORTED_MODULE_11__["PostProdutoComponent"],
                 _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_14__["NavFuncaoComponent"],
-                _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__["SobreComponent"]
+                _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__["SobreComponent"],
+                _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_16__["ClienteComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -282,6 +299,68 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/cliente/cliente.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/cliente/cliente.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NsaWVudGUvY2xpZW50ZS5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/cliente/cliente.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/cliente/cliente.component.ts ***!
+  \**********************************************/
+/*! exports provided: ClienteComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClienteComponent", function() { return ClienteComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _usuario__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../usuario */ "./src/app/usuario.ts");
+/* harmony import */ var _login_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../login.service */ "./src/app/login.service.ts");
+
+
+
+
+var ClienteComponent = /** @class */ (function () {
+    function ClienteComponent(loginService) {
+        this.loginService = loginService;
+        this.mostrarAlert = false;
+        this.usuario = new _usuario__WEBPACK_IMPORTED_MODULE_2__["Usuario"]("", "");
+    }
+    ClienteComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.loginService.mostrarAlert.subscribe(function (mostrar) { return _this.mostrarAlert = mostrar; });
+    };
+    ClienteComponent.prototype.salvar = function () {
+        var _this = this;
+        this.loginService.cadastrar(this.usuario);
+        this.loginService.mostrarAlert.subscribe(function (mostrar) { return _this.mostrarAlert = mostrar; });
+    };
+    ClienteComponent.ctorParameters = function () { return [
+        { type: _login_service__WEBPACK_IMPORTED_MODULE_3__["LoginService"] }
+    ]; };
+    ClienteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-cliente',
+            template: __webpack_require__(/*! raw-loader!./cliente.component.html */ "./node_modules/raw-loader/index.js!./src/app/cliente/cliente.component.html"),
+            styles: [__webpack_require__(/*! ./cliente.component.css */ "./src/app/cliente/cliente.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_login_service__WEBPACK_IMPORTED_MODULE_3__["LoginService"]])
+    ], ClienteComponent);
+    return ClienteComponent;
 }());
 
 
@@ -472,6 +551,7 @@ var LoginService = /** @class */ (function () {
         this.usuarios = [];
         // private autenticador: boolean = false;
         this.mostrarMenu = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.mostrarAlert = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
     }
     LoginService.prototype.logar = function (email, senha) {
         var _this = this;
@@ -483,6 +563,27 @@ var LoginService = /** @class */ (function () {
                 _this.mostrarMenu.emit(false);
             }
             _this.router.navigate(['/']);
+        });
+    };
+    LoginService.prototype.cadastrar = function (user) {
+        var _this = this;
+        var uploadUser = new FormData();
+        uploadUser.append('email', user.email);
+        uploadUser.append('senha', user.senha);
+        uploadUser.append('nome', user.nome);
+        uploadUser.append('cpf', user.cpf);
+        this.http.post("/api/usuario", uploadUser, { reportProgress: true, observe: 'events' }).subscribe(function (event) {
+            console.log(event);
+            /* if (event.headers.status === 200) {
+              this.router.navigate(['/']);
+            } */
+            if (event.body == 200) {
+                _this.mostrarAlert.emit(false);
+                _this.router.navigate(['/']);
+            }
+            else {
+                _this.mostrarAlert.emit(true);
+            }
         });
     };
     LoginService.ctorParameters = function () { return [
@@ -769,13 +870,15 @@ var SobreComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Usuario", function() { return Usuario; });
 var Usuario = /** @class */ (function () {
-    function Usuario(email, senha, nome, id) {
+    function Usuario(email, senha, cpf, nome, id) {
+        this.cpf = cpf;
         this.nome = nome;
         this.id = id;
         this.email = email;
         this.senha = senha;
     }
     Usuario.ctorParameters = function () { return [
+        { type: String },
         { type: String },
         { type: String },
         { type: String },
