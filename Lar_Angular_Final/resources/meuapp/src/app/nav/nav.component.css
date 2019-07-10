@@ -1,0 +1,17 @@
+.container-fluid{
+    margin-bottom: 10px;
+}
+
+figure{
+    margin-top: 20px;
+}
+
+a{
+    font-size: 1.6em;
+    margin-top: 40px;
+    color: black;
+}
+
+a:hover{
+    color: blue;
+}

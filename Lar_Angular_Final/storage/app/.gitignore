@@ -1,0 +1,8 @@
+# *
+# !public/
+# !.gitignore
+*
+!public/
+!public/imgFixa
+!public/imgFixa/*
+!.gitignore
