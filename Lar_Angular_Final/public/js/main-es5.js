@@ -51,7 +51,7 @@ module.exports = "<div class=\"container\">\r\n    <div class=\"row\">    \r\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputProduto\">Produto</label>\n            <input type=\"text\" class=\"form-control\" id=\"inputProduto\" placeholder=\"Mesa\">\n        </div>\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputPreco\">Preço</label>\n            <input type=\"number\" class=\"form-control\" id=\"inputPreco\" placeholder=\"250,00\">\n        </div>\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputDetalhes\">Detalhes</label>\n        <input type=\"text\" class=\"form-control\" id=\"inputDetalhes\" placeholder=\"O produto é...\">\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputModelo\">Modelo</label>\n        <input type=\"text\" class=\"form-control\" id=\"inputModelo\" placeholder=\"Cardigã 7405\">\n    </div>\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputMaterial\">Material</label>\n            <input type=\"text\" class=\"form-control\" id=\"inputMaterial\" placeholder=\"Algodão\">\n        </div>\n        <div class=\"form-group col-md-4\">\n            <label for=\"inputLavagem\">Lavagem</label>\n            <input type=\"text\" class=\"form-control\" id=\"inputLavagem\" placeholder=\"Lavar na máquina\">\n        </div>\n    </div>\n\n    <div class=\"form-row\">\n        <div class=\"custom-file col-md-6\">\n            <input type=\"file\" class=\"custom-file-input\" id=\"validatedCustomFile\" required>\n            <label class=\"custom-file-label\" for=\"validatedCustomFile\">Escolha um arquivo de foto...</label>\n            <div class=\"invalid-feedback\">Adicionar arquivo de foto...</div>\n        </div>\n    </div>\n    <br>\n    <div class=\"form-row\">\n        <button type=\"submit\" class=\"btn btn-primary\">Sign in</button>\n    </div>\n</div>"
+module.exports = "<div class=\"container\">\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputProduto\">Produto</label>\n            <input [(ngModel)]=\"produto.nome\" type=\"text\" class=\"form-control\" id=\"inputProduto\" placeholder=\"Mesa\">\n        </div>\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputPreco\">Preço</label>\n            <input [(ngModel)]=\"produto.preco\" type=\"text\" class=\"form-control\" id=\"inputPreco\" placeholder=\"250,00\">\n        </div>\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputDetalhes\">Detalhes</label>\n        <input [(ngModel)]=\"produto.detalhes\" type=\"text\" class=\"form-control\" id=\"inputDetalhes\" placeholder=\"O produto é...\">\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputModelo\">Modelo</label>\n        <input [(ngModel)]=\"produto.modelo\" type=\"text\" class=\"form-control\" id=\"inputModelo\" placeholder=\"Cardigã 7405\">\n    </div>\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputMaterial\">Material</label>\n            <input [(ngModel)]=\"produto.material\" type=\"text\" class=\"form-control\" id=\"inputMaterial\" placeholder=\"Algodão\">\n        </div>\n        <div class=\"form-group col-md-4\">\n            <label for=\"inputLavagem\">Lavagem</label>\n            <input [(ngModel)]=\"produto.lavagem\" type=\"text\" class=\"form-control\" id=\"inputLavagem\" placeholder=\"Lavar na máquina\">\n        </div>\n    </div>\n\n    <div class=\"form-row\">\n        <div class=\"custom-file col-md-6\">\n            <input (change)=\"mudouarquivo($event)\" type=\"file\" class=\"custom-file-input\" id=\"validatedCustomFile\" required>\n            <label class=\"custom-file-label\" for=\"validatedCustomFile\">Escolha um arquivo de foto...</label>\n            <div class=\"invalid-feedback\">Adicionar arquivo de foto...</div>\n        </div>\n    </div>\n    <br>\n    <div class=\"form-row\">\n        <button (click)=\"salvar()\" type=\"submit\" class=\"btn btn-primary\">Sign in</button>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -62,7 +62,7 @@ module.exports = "<div class=\"container\">\n    <div class=\"form-row\">\n     
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <!-- Inicio linha destaque   -->\r\n    <div class=\"row\">\r\n        <div class=\"col-xs-4 col-sm-4 col-md-4 col-lg-4\">\r\n            <!-- Inicio barralateral -->\r\n            <nav id=\"sidebar\">\r\n                <form class=\"form-inline my-2 my-lg-0\">\r\n                    <input id=\"buscar\" class=\"busca form-control my-2 my-sm-0 m-2\" type=\"search\" placeholder=\"Search\"\r\n                        aria-label=\"Search\">\r\n                    <button class=\"buscar-botao btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\r\n                </form>\r\n\r\n                <div class=\"sidebar-header\">\r\n                    <h2>Departamentos</h2>\r\n                </div>\r\n\r\n                <ul class=\"list-unstyled components\">\r\n                    <li class=\"active\"><a href=\"#homeSubmenu\" data-toggle=\"collapse\" aria-expanded=\"false\"\r\n                            class=\"dropdown-toggle\">Blusas e Camisas</a>\r\n                        <ul class=\"collapse list-unstyled\" id=\"homeSubmenu\">\r\n                            <li><a href=\"#\">Manga Curta</a></li>\r\n                            <li> <a href=\"#\">Manga Comprida</a> </li>\r\n                            <li><a href=\"#\">Camisa Social</a></li>\r\n                            <li><a href=\"#\">Camisa Casual</a></li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li><a href=\"#\">Calças</a></li>\r\n                    <li><a href=\"#\">Saias</a></li>\r\n                    <li> <a href=\"#\">Vestidos</a></li>\r\n                    <li> <a href=\"#\">Sapatos</a></li>\r\n                    <li> <a href=\"#\">Bolças e Carteiras</a></li>\r\n                    <li> <a href=\"#\">Acessórios</a></li>\r\n                </ul>\r\n            </nav>\r\n            <!-- Fim barralateral -->\r\n        </div>\r\n        <!-- Inicio img destaque -->\r\n        <div class=\"col-xs-8 col-sm-8 col-md-8 col-lg-8\">\r\n            <img src=\"/storage/imgFixa/destaque-home.png\" class=\"img-fluid\" alt=\"Responsive image\">\r\n        </div>\r\n        <!-- Inicio img destaque -->\r\n    </div>\r\n    <!-- Fim linha destaque -->\r\n    <!-- Inicio mostra de produtos -->\r\n    <div class=\"row\">\r\n        <!-- Inicio da div novidades  -->\r\n        <div class=\"col-xs-5 col-sm-5 col-md-5 col-lg-5 painel novidades\">\r\n            <h2>Novidades</h2>\r\n\r\n            <div class=\"row\">                \r\n                <!-- Inicio exemplo valido -->\r\n                <app-post-produto class=\"col-xs-4 col-sm-4 col-md-4 col-lg-4\" *ngFor=\"let p of posts\" [post]=\"p\"></app-post-produto>\r\n                <!--Fim exemplo valido -->                \r\n            </div>\r\n        </div>\r\n        <!-- Fim da div novidades  -->\r\n        <!-- Espaço -->\r\n        <div class=\"col-xs-2 col-sm-2 col-md-2 col-lg-2\"></div>\r\n        <!-- Fim Espaço -->\r\n        <!-- Inicio da div mais vendidos   -->\r\n        <div class=\"col-xs-5 col-sm-5 col-md-5 col-lg-5 painel mais-vendidos\">\r\n            <h2>Mais Vendidos</h2>\r\n\r\n            <div class=\"row\">\r\n                <!-- Inicio exemplo valido -->\r\n                <app-post-produto class=\"col-xs-4 col-sm-4 col-md-4 col-lg-4\" *ngFor=\"let p of posts\" [post]=\"p\"></app-post-produto>\r\n                <!--Fim exemplo valido -->\r\n            </div>\r\n        </div>\r\n        <!-- Fim da div mais vendidos   -->\r\n    </div>\r\n    <!-- Fim mostra de produtos -->\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <!-- Inicio linha destaque   -->\r\n    <div class=\"row\">\r\n        <div class=\"col-xs-4 col-sm-4 col-md-4 col-lg-4\">\r\n            <!-- Inicio barralateral -->\r\n            <nav id=\"sidebar\">\r\n                <form class=\"form-inline my-2 my-lg-0\">\r\n                    <input id=\"buscar\" class=\"busca form-control my-2 my-sm-0 m-2\" type=\"search\" placeholder=\"Search\"\r\n                        aria-label=\"Search\">\r\n                    <button class=\"buscar-botao btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\r\n                </form>\r\n\r\n                <div class=\"sidebar-header\">\r\n                    <h2>Departamentos</h2>\r\n                </div>\r\n\r\n                <ul class=\"list-unstyled components\">\r\n                    <li class=\"active\"><a href=\"#homeSubmenu\" data-toggle=\"collapse\" aria-expanded=\"false\"\r\n                            class=\"dropdown-toggle\">Blusas e Camisas</a>\r\n                        <ul class=\"collapse list-unstyled\" id=\"homeSubmenu\">\r\n                            <li><a href=\"#\">Manga Curta</a></li>\r\n                            <li> <a href=\"#\">Manga Comprida</a> </li>\r\n                            <li><a href=\"#\">Camisa Social</a></li>\r\n                            <li><a href=\"#\">Camisa Casual</a></li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li><a href=\"#\">Calças</a></li>\r\n                    <li><a href=\"#\">Saias</a></li>\r\n                    <li> <a href=\"#\">Vestidos</a></li>\r\n                    <li> <a href=\"#\">Sapatos</a></li>\r\n                    <li> <a href=\"#\">Bolças e Carteiras</a></li>\r\n                    <li> <a href=\"#\">Acessórios</a></li>\r\n                </ul>\r\n            </nav>\r\n            <!-- Fim barralateral -->\r\n        </div>\r\n        <!-- Inicio img destaque -->\r\n        <div class=\"col-xs-8 col-sm-8 col-md-8 col-lg-8\">\r\n            <img src=\"/storage/imgFixa/destaque-home.png\" class=\"img-fluid\" alt=\"Responsive image\">\r\n        </div>\r\n        <!-- Inicio img destaque -->\r\n    </div>\r\n    <!-- Fim linha destaque -->\r\n    <!-- Inicio mostra de produtos -->\r\n    <div class=\"row\">\r\n        <!-- Inicio da div novidades  -->\r\n        <div class=\"col-xs-5 col-sm-5 col-md-5 col-lg-5 painel novidades\">\r\n            <h2>Novidades</h2>\r\n\r\n            <div class=\"row\">                \r\n                <!-- Inicio exemplo valido -->\r\n                <app-post-produto class=\"col-xs-4 col-sm-4 col-md-4 col-lg-4\" *ngFor=\"let p of postsProdutos\" [post]=\"p\"></app-post-produto>\r\n                <!--Fim exemplo valido -->                \r\n            </div>\r\n        </div>\r\n        <!-- Fim da div novidades  -->\r\n        <!-- Espaço -->\r\n        <div class=\"col-xs-2 col-sm-2 col-md-2 col-lg-2\"></div>\r\n        <!-- Fim Espaço -->\r\n        <!-- Inicio da div mais vendidos   -->\r\n        <div class=\"col-xs-5 col-sm-5 col-md-5 col-lg-5 painel mais-vendidos\">\r\n            <h2>Mais Vendidos</h2>\r\n\r\n            <div class=\"row\">\r\n                <!-- Inicio exemplo valido -->\r\n                <app-post-produto class=\"col-xs-4 col-sm-4 col-md-4 col-lg-4\" *ngFor=\"let p of postsProdutos\" [post]=\"p\"></app-post-produto>\r\n                <!--Fim exemplo valido -->\r\n            </div>\r\n        </div>\r\n        <!-- Fim da div mais vendidos   -->\r\n    </div>\r\n    <!-- Fim mostra de produtos -->\r\n</div>"
 
 /***/ }),
 
@@ -95,7 +95,18 @@ module.exports = "<div class=\"container-fluid\">\r\n    <nav class=\"navbar-lig
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<a routerLink=\"/produtos/1\">\r\n    <figure class=\"figure\">\r\n        <img src=\"/storage/imgFixa/miniatura1.png\" class=\"figure-img img-fluid rounded\" alt=\"Produto\">\r\n        <figcaption class=\"figure-caption\">{{post.nome}} por R$ {{post.preco}}</figcaption>\r\n    </figure>\r\n</a>"
+module.exports = "<a routerLink=\"/produtos/{{post.id}}\">\r\n    <figure class=\"figure\">\r\n        <img src=\"/storage/{{post.arquivo}}\" class=\"figure-img img-fluid rounded\" alt=\"Produto\">\r\n        <figcaption class=\"figure-caption\">{{post.nome}} por R$ {{post.preco}}</figcaption>\r\n    </figure>\r\n</a>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/produto/produto.component.html":
+/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/produto/produto.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>produto works!</p>\r\n<!-- Início da classe produtos -->\r\n<div class=\"container\">\r\n    <div class=\"produto\">\r\n            <h1>Fuzzy Cardigan</h1>\r\n            <p>por apenas R$ 129,90</p>\r\n            <form>\r\n                <fieldset class=\"cores\">\r\n                    <legend>Escolha a cor:</legend>\r\n                    <input type=\"radio\" name=\"cor\" value=\"verde\" id=\"verde\" checked>\r\n                    <label for=\"verde\">\r\n                        <img src=\"img/produtos/foto1-verde.png\" alt=\"Produto na cor verde\">\r\n                    </label>\r\n                    <input type=\"radio\" name=\"cor\" value=\"rosa\" id=\"rosa\">\r\n                    <label for=\"rosa\">\r\n                        <img src=\"img/produtos/foto1-rosa.png\" alt=\"Produto na cor rosa\">\r\n                    </label>\r\n                    <input type=\"radio\" name=\"cor\" value=\"azul\" id=\"azul\">\r\n                    <label for=\"azul\">\r\n                        <img src=\"img/produtos/foto1-azul.png\" alt=\"Produto na cor azul\">\r\n                    </label>\r\n                </fieldset>\r\n                <fieldset class=\"tamanhos\">\r\n                    <legend>Escolha o tamanho:</legend>\r\n                    <input type=\"range\" min=\"36\" max=\"46\" value=\"42\" step=\"2\" name=\"tamanho\" id=\"tamanho\">\r\n                    <output for=\"tamanho\" name=\"valortamanho\">42</output>\r\n                </fieldset>\r\n                <button class=\"comprar\">Comprar</button>\r\n            </form>\r\n    </div>\r\n    <div class=\"detalhes\">\r\n        <h2>Detalhes do produto</h2>\r\n        <p>\r\n            Esse é o melhor casaco de Cardigã que você já viu. Excelente\r\n        material italiano com estampa desenhada pelos artesãos da\r\n        comunidade de Krotor nas ilhas gregas. Compre já e receba hoje\r\n        mesmo pela nossa entrega a jato.\r\n        </p>\r\n        <table>\r\n            <thead>\r\n                <tr>\r\n                    <th>Característica</th>\r\n                    <th>Detalhe</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr>\r\n                    <td>Modelo</td>\r\n                    <td>Cardigã 7845</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Material</td>\r\n                    <td>Algodão e poliester</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Cores</td>\r\n                    <td>Azul, Rosa e Verde</td>\r\n                </tr>\r\n                <tr>                    \r\n                    <td>Lavagem</td>\r\n                    <td>Lavar a mão</td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n</div>\r\n<!-- Fim da classe produto -->\r\n"
 
 /***/ }),
 
@@ -151,6 +162,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
 /* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
 /* harmony import */ var _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./form-produto/form-produto.component */ "./src/app/form-produto/form-produto.component.ts");
+/* harmony import */ var _produto_produto_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./produto/produto.component */ "./src/app/produto/produto.component.ts");
+
 
 
 
@@ -162,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [
     { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
     { path: 'login', component: _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_4__["FormLoginComponent"] },
-    //{path: 'produtos/:id', } //falta o componente
+    { path: 'produtos/:id', component: _produto_produto_component__WEBPACK_IMPORTED_MODULE_8__["ProdutoComponent"] },
     { path: 'sobre', component: _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__["SobreComponent"] },
     { path: 'cliente', component: _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_6__["ClienteComponent"] },
     { path: 'produto', component: _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_7__["FormProdutoComponent"] }
@@ -266,6 +279,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
 /* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
 /* harmony import */ var _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./form-produto/form-produto.component */ "./src/app/form-produto/form-produto.component.ts");
+/* harmony import */ var _produto_produto_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./produto/produto.component */ "./src/app/produto/produto.component.ts");
+
 
 
 
@@ -299,7 +314,8 @@ var AppModule = /** @class */ (function () {
                 _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_14__["NavFuncaoComponent"],
                 _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__["SobreComponent"],
                 _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_16__["ClienteComponent"],
-                _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_17__["FormProdutoComponent"]
+                _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_17__["FormProdutoComponent"],
+                _produto_produto_component__WEBPACK_IMPORTED_MODULE_18__["ProdutoComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -509,20 +525,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormProdutoComponent", function() { return FormProdutoComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _post_produtos_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-produtos.service */ "./src/app/post-produtos.service.ts");
+/* harmony import */ var _postProduto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../postProduto */ "./src/app/postProduto.ts");
+
+
 
 
 var FormProdutoComponent = /** @class */ (function () {
-    function FormProdutoComponent() {
+    function FormProdutoComponent(produtoService) {
+        this.produtoService = produtoService;
+        this.produto = new _postProduto__WEBPACK_IMPORTED_MODULE_3__["PostProduto"]("", "", "", "", "", "");
+        this.nomearquivo = '';
     }
     FormProdutoComponent.prototype.ngOnInit = function () {
     };
+    FormProdutoComponent.prototype.mudouarquivo = function (event) {
+        this.nomearquivo = event.target.files[0].name;
+        this.arquivo = event.target.files[0];
+    };
+    FormProdutoComponent.prototype.salvar = function () {
+        this.produtoService.salvar(this.produto, this.arquivo);
+    };
+    FormProdutoComponent.ctorParameters = function () { return [
+        { type: _post_produtos_service__WEBPACK_IMPORTED_MODULE_2__["PostProdutosService"] }
+    ]; };
     FormProdutoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-form-produto',
             template: __webpack_require__(/*! raw-loader!./form-produto.component.html */ "./node_modules/raw-loader/index.js!./src/app/form-produto/form-produto.component.html"),
             styles: [__webpack_require__(/*! ./form-produto.component.css */ "./src/app/form-produto/form-produto.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_produtos_service__WEBPACK_IMPORTED_MODULE_2__["PostProdutosService"]])
     ], FormProdutoComponent);
     return FormProdutoComponent;
 }());
@@ -554,32 +587,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _postProduto__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../postProduto */ "./src/app/postProduto.ts");
+/* harmony import */ var _post_produtos_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-produtos.service */ "./src/app/post-produtos.service.ts");
 
 
 
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent() {
-        this.posts = [
-            new _postProduto__WEBPACK_IMPORTED_MODULE_2__["PostProduto"]("Camisa", 29.50, "Esse é o melhor casaco de Cardigã que você já viu.", "Cardigã", "poliester", "mão"),
-            new _postProduto__WEBPACK_IMPORTED_MODULE_2__["PostProduto"]("Bermuda", 30.50, "Esse é o melhor.", "7845", "Algodão", "Lavar"),
-            new _postProduto__WEBPACK_IMPORTED_MODULE_2__["PostProduto"]("Calça", 28.50, "casaco de Cardigã que você já viu.", "digã 7845", "Algodão e poliester", "Lavar a mão"),
-            new _postProduto__WEBPACK_IMPORTED_MODULE_2__["PostProduto"]("Camisa Curta", 29.40, "casaco de Cardigã.", "Cardigã 78", "Algodão ", "Lavar"),
-            new _postProduto__WEBPACK_IMPORTED_MODULE_2__["PostProduto"]("Camisa", 29.50, "Esse é o melhor casaco de Cardigã que você já viu.", "Cardigã", "poliester", "mão"),
-            new _postProduto__WEBPACK_IMPORTED_MODULE_2__["PostProduto"]("Bermuda", 30.50, "Esse é o melhor.", "7845", "Algodão", "Lavar"),
-            new _postProduto__WEBPACK_IMPORTED_MODULE_2__["PostProduto"]("Calça", 28.50, "casaco de Cardigã que você já viu.", "digã 7845", "Algodão e poliester", "Lavar a mão"),
-            new _postProduto__WEBPACK_IMPORTED_MODULE_2__["PostProduto"]("Camisa Curta", 29.40, "casaco de Cardigã.", "Cardigã 78", "Algodão ", "Lavar")
-        ];
+    function HomeComponent(postProdutos) {
+        this.postProdutos = postProdutos;
+        this.postsProdutos = [];
     }
     HomeComponent.prototype.ngOnInit = function () {
+        this.postsProdutos = this.postProdutos.postsProduto;
     };
+    HomeComponent.ctorParameters = function () { return [
+        { type: _post_produtos_service__WEBPACK_IMPORTED_MODULE_2__["PostProdutosService"] }
+    ]; };
     HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-home',
             template: __webpack_require__(/*! raw-loader!./home.component.html */ "./node_modules/raw-loader/index.js!./src/app/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_produtos_service__WEBPACK_IMPORTED_MODULE_2__["PostProdutosService"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -817,18 +846,61 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _postProduto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./postProduto */ "./src/app/postProduto.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
 
 
 
 var PostProdutosService = /** @class */ (function () {
-    function PostProdutosService(http) {
+    function PostProdutosService(router, http) {
+        var _this = this;
+        this.router = router;
+        this.http = http;
+        this.postsProduto = [];
+        this.http.get("/api/").subscribe(function (posts) {
+            var e_1, _a;
+            try {
+                for (var posts_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__values"](posts), posts_1_1 = posts_1.next(); !posts_1_1.done; posts_1_1 = posts_1.next()) {
+                    var p = posts_1_1.value;
+                    _this.postsProduto.push(new _postProduto__WEBPACK_IMPORTED_MODULE_3__["PostProduto"](p.nome, p.preco, p.detalhes, p.modelo, p.mateterial, p.lavagem, p.arquivo, p.id));
+                }
+            }
+            catch (e_1_1) { e_1 = { error: e_1_1 }; }
+            finally {
+                try {
+                    if (posts_1_1 && !posts_1_1.done && (_a = posts_1.return)) _a.call(posts_1);
+                }
+                finally { if (e_1) throw e_1.error; }
+            }
+        });
     }
+    PostProdutosService.prototype.salvar = function (postProduto, file) {
+        var _this = this;
+        var uploadData = new FormData();
+        uploadData.append('nome', postProduto.nome);
+        uploadData.append('preco', postProduto.preco);
+        uploadData.append('detalhes', postProduto.detalhes);
+        uploadData.append('modelo', postProduto.modelo);
+        uploadData.append('material', postProduto.material);
+        uploadData.append('lavagem', postProduto.lavagem);
+        uploadData.append('arquivo', file, file.name);
+        this.http.post("/api/produto", uploadData, { reportProgress: true, observe: 'events' }).subscribe(function (event) {
+            if (event.type == _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpEventType"].Response) {
+                var p = event.body;
+                _this.postsProduto.push(new _postProduto__WEBPACK_IMPORTED_MODULE_3__["PostProduto"](p.nome, p.preco, p.detalhes, p.modelo, p.mateterial, p.lavagem, p.arquivo, p.id));
+                _this.router.navigate(['/']);
+            }
+        });
+    };
     PostProdutosService.ctorParameters = function () { return [
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
     ]; };
     PostProdutosService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
     ], PostProdutosService);
     return PostProdutosService;
 }());
@@ -860,7 +932,7 @@ var PostProduto = /** @class */ (function () {
     }
     PostProduto.ctorParameters = function () { return [
         { type: String },
-        { type: Number },
+        { type: String },
         { type: String },
         { type: String },
         { type: String },
@@ -869,6 +941,51 @@ var PostProduto = /** @class */ (function () {
         { type: Number }
     ]; };
     return PostProduto;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/produto/produto.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/produto/produto.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".cores label::after {\r\n    content: '';\r\n    display: block;\r\n    border-radius: 50%;\r\n    width: 50px;\r\n    height: 50px;\r\n}\r\n\r\nlabel[for=verde]::after {\r\n    background-color: #33CC66;\r\n}\r\n\r\nlabel[for=rosa]::after {\r\n    background-color: #FF6666;\r\n}\r\n\r\nlabel[for=azul]::after {\r\n    background-color: #6666FF;\r\n}\r\n\r\n.cores input:checked + label::after {\r\n    border: 6px solid rgba(0,0,0,0.3);\r\n}\r\n\r\n.cores label::after {\r\n    box-sizing: border-box;\r\n}\r\n\r\n.cores input[type=radio] {\r\n    display: none;\r\n}\r\n\r\n.cores input:not(:checked) + label img {\r\n    display: none;\r\n}\r\n\r\n.cores label::after {\r\n    position: absolute;\r\n    top: 30px;\r\n}\r\n\r\n.cores {\r\n    position: relative;\r\n    padding-top: 90px;\r\n}\r\n\r\nlabel[for=verde]::after {\r\n    left: 0;\r\n}\r\n\r\nlabel[for=rosa]::after {\r\n    left: 60px;\r\n}\r\n\r\nlabel[for=azul]::after {\r\n    left: 120px;\r\n}\r\n\r\n.cores label img {\r\n    display: block;\r\n    max-width: 100%;\r\n}\r\n\r\n.produto {\r\n    color: #333;\r\n    line-height: 1.3;\r\n    margin-top: 2em;\r\n}\r\n\r\n.produto h1 {\r\n    font-size: 1.8em;\r\n    font-weight: bold;\r\n}\r\n\r\n.produto p {\r\n    font-size: 1.2em;\r\n    font-style: italic;\r\n    margin-bottom: 1em;\r\n}\r\n\r\n.produto legend {\r\n    display: block;\r\n    font: bold 0.9em/2.5 Arial;\r\n    text-transform: uppercase;\r\n}\r\n\r\n.comprar {\r\n    background: #91BD3C;\r\n    border: none;\r\n    color: #333;\r\n    font-size: 1.4em;\r\n    text-transform: uppercase;\r\n    box-shadow: 0 1px 3px #777;\r\n    display: block;\r\n    padding: 0.5em 1em;\r\n    margin: 1em 0;\r\n}\r\n\r\n.cores label::after {\r\n    border: 6px solid rgba(0,0,0,0);\r\n    -webkit-transition: 1s;\r\n    transition: 1s;\r\n}\r\n\r\n.cores label::after {\r\n    cursor: pointer;\r\n}\r\n\r\n.detalhes {\r\n    padding: 2em 0;\r\n}\r\n\r\n.detalhes h2 {\r\n    font-size: 1.5em;\r\n    line-height: 2;\r\n}\r\n\r\n.detalhes p {\r\n    margin: 1em 0;\r\n    font-size: 1em;\r\n    line-height: 1.5;\r\n    max-width: 36em;\r\n}\r\n\r\ntable {\r\n    border-spacing: 0.2em;\r\n    border-collapse: separate;\r\n}\r\n\r\nthead {\r\n    background-color: #999;\r\n}\r\n\r\nthead th {\r\n    font-weight: bold;\r\n    padding: 0.3em 1em;\r\n    text-align: center;\r\n}\r\n\r\ntd {\r\n    padding: 0.3em;\r\n}\r\n\r\ntr:nth-child(2n) {\r\n    background-color: #CCC;\r\n}\r\n\r\ntd:first-child {\r\n    font-style: italic;\r\n}\r\n\r\n@media (min-width: 500px) {\r\n    .detalhes {\r\n        font-size: 1.2em;\r\n    }\r\n}\r\n\r\n@media (min-width: 630px) {\r\n    .produto {\r\n        /* a foto vai se posicionar absolutamente com relação a esse elemento,\r\n        por isso preciso estar posicionado */\r\n        position: relative;\r\n        /* deixar 40% de espaço em branco na esquerda para foto ocupar */\r\n        padding-left: 40%;\r\n        font-size: 1.2em;\r\n    }\r\n\r\n    .cores {\r\n        /* estava relative antes; reinicio para static para evitar que a foto se posicione com relaçã\r\n        o a mim */\r\n        position: static;\r\n        /* zerando o padding-top que tinha antes e não preciso mais */\r\n        padding: 0;\r\n    }\r\n\r\n    .cores legend {\r\n        /* estava absolute antes, para ter o mesmo comportamento no Chrome e no Firefox;\r\n        agora podemos voltar ao fluxo da página */\r\n        position: static;\r\n    }\r\n\r\n    .cores label img {\r\n        /* imagem se posiciona absolutamente à esquerda com relação ao .produto */\r\n        position: absolute;\r\n        top: 0;\r\n        left: 0;\r\n        max-width: 35%;\r\n        max-height: 100%;\r\n    }\r\n\r\n    .cores label:after {\r\n        /* as bolinhas coloridas tinham posição absoluta e não precisamos mais,\r\n        basta flutuar uma do lado da outra */\r\n        position: static;\r\n        float: left;\r\n        margin-right: 10px;\r\n    }\r\n\r\n    fieldset {\r\n        display: inline-block;\r\n        vertical-align: top;\r\n        margin: 1em 0;\r\n        min-width: 240px;\r\n        width: 45%;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZHV0by9wcm9kdXRvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0lBQ1gsY0FBYztJQUNkLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLGlDQUFpQztBQUNyQzs7QUFFQTtJQUNJLHNCQUFzQjtBQUMxQjs7QUFFQTtJQUNJLGFBQWE7QUFDakI7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFNBQVM7QUFDYjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxPQUFPO0FBQ1g7O0FBRUE7SUFDSSxVQUFVO0FBQ2Q7O0FBRUE7SUFDSSxXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxjQUFjO0lBQ2QsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxnQkFBZ0I7SUFDaEIsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLGdCQUFnQjtJQUNoQixpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGNBQWM7SUFDZCwwQkFBMEI7SUFDMUIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixXQUFXO0lBQ1gsZ0JBQWdCO0lBQ2hCLHlCQUF5QjtJQUN6QiwwQkFBMEI7SUFDMUIsY0FBYztJQUNkLGtCQUFrQjtJQUNsQixhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksK0JBQStCO0lBQy9CLHNCQUFjO0lBQWQsY0FBYztBQUNsQjs7QUFFQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixlQUFlO0FBQ25COztBQUVBO0lBQ0kscUJBQXFCO0lBQ3JCLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLHNCQUFzQjtBQUMxQjs7QUFFQTtJQUNJLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksY0FBYztBQUNsQjs7QUFFQTtJQUNJLHNCQUFzQjtBQUMxQjs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJO1FBQ0ksZ0JBQWdCO0lBQ3BCO0FBQ0o7O0FBRUE7SUFDSTtRQUNJOzRDQUNvQztRQUNwQyxrQkFBa0I7UUFDbEIsZ0VBQWdFO1FBQ2hFLGlCQUFpQjtRQUNqQixnQkFBZ0I7SUFDcEI7O0lBRUE7UUFDSTtpQkFDUztRQUNULGdCQUFnQjtRQUNoQiw2REFBNkQ7UUFDN0QsVUFBVTtJQUNkOztJQUVBO1FBQ0k7aURBQ3lDO1FBQ3pDLGdCQUFnQjtJQUNwQjs7SUFFQTtRQUNJLHlFQUF5RTtRQUN6RSxrQkFBa0I7UUFDbEIsTUFBTTtRQUNOLE9BQU87UUFDUCxjQUFjO1FBQ2QsZ0JBQWdCO0lBQ3BCOztJQUVBO1FBQ0k7NENBQ29DO1FBQ3BDLGdCQUFnQjtRQUNoQixXQUFXO1FBQ1gsa0JBQWtCO0lBQ3RCOztJQUVBO1FBQ0kscUJBQXFCO1FBQ3JCLG1CQUFtQjtRQUNuQixhQUFhO1FBQ2IsZ0JBQWdCO1FBQ2hCLFVBQVU7SUFDZDtBQUNKIiwiZmlsZSI6InNyYy9hcHAvcHJvZHV0by9wcm9kdXRvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29yZXMgbGFiZWw6OmFmdGVyIHtcclxuICAgIGNvbnRlbnQ6ICcnO1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgICB3aWR0aDogNTBweDtcclxuICAgIGhlaWdodDogNTBweDtcclxufVxyXG5cclxubGFiZWxbZm9yPXZlcmRlXTo6YWZ0ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzMzQ0M2NjtcclxufVxyXG5cclxubGFiZWxbZm9yPXJvc2FdOjphZnRlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRkY2NjY2O1xyXG59XHJcblxyXG5sYWJlbFtmb3I9YXp1bF06OmFmdGVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICM2NjY2RkY7XHJcbn1cclxuXHJcbi5jb3JlcyBpbnB1dDpjaGVja2VkICsgbGFiZWw6OmFmdGVyIHtcclxuICAgIGJvcmRlcjogNnB4IHNvbGlkIHJnYmEoMCwwLDAsMC4zKTtcclxufVxyXG5cclxuLmNvcmVzIGxhYmVsOjphZnRlciB7XHJcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG59XHJcblxyXG4uY29yZXMgaW5wdXRbdHlwZT1yYWRpb10ge1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxufVxyXG5cclxuLmNvcmVzIGlucHV0Om5vdCg6Y2hlY2tlZCkgKyBsYWJlbCBpbWcge1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxufVxyXG5cclxuLmNvcmVzIGxhYmVsOjphZnRlciB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDMwcHg7XHJcbn1cclxuXHJcbi5jb3JlcyB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICBwYWRkaW5nLXRvcDogOTBweDtcclxufVxyXG5cclxubGFiZWxbZm9yPXZlcmRlXTo6YWZ0ZXIge1xyXG4gICAgbGVmdDogMDtcclxufVxyXG5cclxubGFiZWxbZm9yPXJvc2FdOjphZnRlciB7XHJcbiAgICBsZWZ0OiA2MHB4O1xyXG59XHJcblxyXG5sYWJlbFtmb3I9YXp1bF06OmFmdGVyIHtcclxuICAgIGxlZnQ6IDEyMHB4O1xyXG59XHJcblxyXG4uY29yZXMgbGFiZWwgaW1nIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgbWF4LXdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4ucHJvZHV0byB7XHJcbiAgICBjb2xvcjogIzMzMztcclxuICAgIGxpbmUtaGVpZ2h0OiAxLjM7XHJcbiAgICBtYXJnaW4tdG9wOiAyZW07XHJcbn1cclxuXHJcbi5wcm9kdXRvIGgxIHtcclxuICAgIGZvbnQtc2l6ZTogMS44ZW07XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG5cclxuLnByb2R1dG8gcCB7XHJcbiAgICBmb250LXNpemU6IDEuMmVtO1xyXG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xyXG59XHJcblxyXG4ucHJvZHV0byBsZWdlbmQge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBmb250OiBib2xkIDAuOWVtLzIuNSBBcmlhbDtcclxuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbn1cclxuXHJcbi5jb21wcmFyIHtcclxuICAgIGJhY2tncm91bmQ6ICM5MUJEM0M7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBjb2xvcjogIzMzMztcclxuICAgIGZvbnQtc2l6ZTogMS40ZW07XHJcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG4gICAgYm94LXNoYWRvdzogMCAxcHggM3B4ICM3Nzc7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIHBhZGRpbmc6IDAuNWVtIDFlbTtcclxuICAgIG1hcmdpbjogMWVtIDA7XHJcbn1cclxuXHJcbi5jb3JlcyBsYWJlbDo6YWZ0ZXIge1xyXG4gICAgYm9yZGVyOiA2cHggc29saWQgcmdiYSgwLDAsMCwwKTtcclxuICAgIHRyYW5zaXRpb246IDFzO1xyXG59XHJcblxyXG4uY29yZXMgbGFiZWw6OmFmdGVyIHtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxufVxyXG5cclxuLmRldGFsaGVzIHtcclxuICAgIHBhZGRpbmc6IDJlbSAwO1xyXG59XHJcblxyXG4uZGV0YWxoZXMgaDIge1xyXG4gICAgZm9udC1zaXplOiAxLjVlbTtcclxuICAgIGxpbmUtaGVpZ2h0OiAyO1xyXG59XHJcblxyXG4uZGV0YWxoZXMgcCB7XHJcbiAgICBtYXJnaW46IDFlbSAwO1xyXG4gICAgZm9udC1zaXplOiAxZW07XHJcbiAgICBsaW5lLWhlaWdodDogMS41O1xyXG4gICAgbWF4LXdpZHRoOiAzNmVtO1xyXG59XHJcblxyXG50YWJsZSB7XHJcbiAgICBib3JkZXItc3BhY2luZzogMC4yZW07XHJcbiAgICBib3JkZXItY29sbGFwc2U6IHNlcGFyYXRlO1xyXG59XHJcblxyXG50aGVhZCB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjOTk5O1xyXG59XHJcblxyXG50aGVhZCB0aCB7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIHBhZGRpbmc6IDAuM2VtIDFlbTtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxudGQge1xyXG4gICAgcGFkZGluZzogMC4zZW07XHJcbn1cclxuXHJcbnRyOm50aC1jaGlsZCgybikge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0NDQztcclxufVxyXG5cclxudGQ6Zmlyc3QtY2hpbGQge1xyXG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xyXG59XHJcblxyXG5AbWVkaWEgKG1pbi13aWR0aDogNTAwcHgpIHtcclxuICAgIC5kZXRhbGhlcyB7XHJcbiAgICAgICAgZm9udC1zaXplOiAxLjJlbTtcclxuICAgIH1cclxufVxyXG5cclxuQG1lZGlhIChtaW4td2lkdGg6IDYzMHB4KSB7XHJcbiAgICAucHJvZHV0byB7XHJcbiAgICAgICAgLyogYSBmb3RvIHZhaSBzZSBwb3NpY2lvbmFyIGFic29sdXRhbWVudGUgY29tIHJlbGHDp8OjbyBhIGVzc2UgZWxlbWVudG8sXHJcbiAgICAgICAgcG9yIGlzc28gcHJlY2lzbyBlc3RhciBwb3NpY2lvbmFkbyAqL1xyXG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgICAgICAvKiBkZWl4YXIgNDAlIGRlIGVzcGHDp28gZW0gYnJhbmNvIG5hIGVzcXVlcmRhIHBhcmEgZm90byBvY3VwYXIgKi9cclxuICAgICAgICBwYWRkaW5nLWxlZnQ6IDQwJTtcclxuICAgICAgICBmb250LXNpemU6IDEuMmVtO1xyXG4gICAgfVxyXG5cclxuICAgIC5jb3JlcyB7XHJcbiAgICAgICAgLyogZXN0YXZhIHJlbGF0aXZlIGFudGVzOyByZWluaWNpbyBwYXJhIHN0YXRpYyBwYXJhIGV2aXRhciBxdWUgYSBmb3RvIHNlIHBvc2ljaW9uZSBjb20gcmVsYcOnw6NcclxuICAgICAgICBvIGEgbWltICovXHJcbiAgICAgICAgcG9zaXRpb246IHN0YXRpYztcclxuICAgICAgICAvKiB6ZXJhbmRvIG8gcGFkZGluZy10b3AgcXVlIHRpbmhhIGFudGVzIGUgbsOjbyBwcmVjaXNvIG1haXMgKi9cclxuICAgICAgICBwYWRkaW5nOiAwO1xyXG4gICAgfVxyXG5cclxuICAgIC5jb3JlcyBsZWdlbmQge1xyXG4gICAgICAgIC8qIGVzdGF2YSBhYnNvbHV0ZSBhbnRlcywgcGFyYSB0ZXIgbyBtZXNtbyBjb21wb3J0YW1lbnRvIG5vIENocm9tZSBlIG5vIEZpcmVmb3g7XHJcbiAgICAgICAgYWdvcmEgcG9kZW1vcyB2b2x0YXIgYW8gZmx1eG8gZGEgcMOhZ2luYSAqL1xyXG4gICAgICAgIHBvc2l0aW9uOiBzdGF0aWM7XHJcbiAgICB9XHJcblxyXG4gICAgLmNvcmVzIGxhYmVsIGltZyB7XHJcbiAgICAgICAgLyogaW1hZ2VtIHNlIHBvc2ljaW9uYSBhYnNvbHV0YW1lbnRlIMOgIGVzcXVlcmRhIGNvbSByZWxhw6fDo28gYW8gLnByb2R1dG8gKi9cclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgdG9wOiAwO1xyXG4gICAgICAgIGxlZnQ6IDA7XHJcbiAgICAgICAgbWF4LXdpZHRoOiAzNSU7XHJcbiAgICAgICAgbWF4LWhlaWdodDogMTAwJTtcclxuICAgIH1cclxuXHJcbiAgICAuY29yZXMgbGFiZWw6YWZ0ZXIge1xyXG4gICAgICAgIC8qIGFzIGJvbGluaGFzIGNvbG9yaWRhcyB0aW5oYW0gcG9zacOnw6NvIGFic29sdXRhIGUgbsOjbyBwcmVjaXNhbW9zIG1haXMsXHJcbiAgICAgICAgYmFzdGEgZmx1dHVhciB1bWEgZG8gbGFkbyBkYSBvdXRyYSAqL1xyXG4gICAgICAgIHBvc2l0aW9uOiBzdGF0aWM7XHJcbiAgICAgICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG4gICAgfVxyXG5cclxuICAgIGZpZWxkc2V0IHtcclxuICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgdmVydGljYWwtYWxpZ246IHRvcDtcclxuICAgICAgICBtYXJnaW46IDFlbSAwO1xyXG4gICAgICAgIG1pbi13aWR0aDogMjQwcHg7XHJcbiAgICAgICAgd2lkdGg6IDQ1JTtcclxuICAgIH1cclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/produto/produto.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/produto/produto.component.ts ***!
+  \**********************************************/
+/*! exports provided: ProdutoComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProdutoComponent", function() { return ProdutoComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ProdutoComponent = /** @class */ (function () {
+    function ProdutoComponent() {
+    }
+    ProdutoComponent.prototype.ngOnInit = function () {
+    };
+    ProdutoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-produto',
+            template: __webpack_require__(/*! raw-loader!./produto.component.html */ "./node_modules/raw-loader/index.js!./src/app/produto/produto.component.html"),
+            styles: [__webpack_require__(/*! ./produto.component.css */ "./src/app/produto/produto.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], ProdutoComponent);
+    return ProdutoComponent;
 }());
 
 

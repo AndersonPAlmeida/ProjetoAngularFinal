@@ -16,6 +16,7 @@ import { NavFuncaoComponent } from './nav-funcao/nav-funcao.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { FormProdutoComponent } from './form-produto/form-produto.component';
+import { ProdutoComponent } from './produto/produto.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormProdutoComponent } from './form-produto/form-produto.component';
     NavFuncaoComponent,
     SobreComponent,
     ClienteComponent,
-    FormProdutoComponent
+    FormProdutoComponent,
+    ProdutoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 export class PostProduto{
     constructor(
         public nome: string,
-        public preco:number,
+        public preco:string,
         public detalhes: string,
         public modelo: string,
         public material: string,

@@ -16,7 +16,7 @@ class CreatePostProdutosTable extends Migration
         Schema::create('post_produtos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
-            $table->integer('preco');
+            $table->string('preco');
             $table->string('detalhes');
             $table->string('modelo');
             $table->string('material');

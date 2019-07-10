@@ -1,6 +1,6 @@
-<a routerLink="/produtos/1">
+<a routerLink="/produtos/{{post.id}}">
     <figure class="figure">
-        <img src="/storage/imgFixa/miniatura1.png" class="figure-img img-fluid rounded" alt="Produto">
+        <img src="/storage/{{post.arquivo}}" class="figure-img img-fluid rounded" alt="Produto">
         <figcaption class="figure-caption">{{post.nome}} por R$ {{post.preco}}</figcaption>
     </figure>
 </a>
