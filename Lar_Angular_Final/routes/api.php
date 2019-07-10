@@ -21,5 +21,5 @@ Route::get('/', 'PostProdutoControlador@index');
 Route::post('/produto', 'PostProdutoControlador@store');
 Route::get('/produto/{id}', 'PostProdutoControlador@show');
 
-Route::post('/usuario', 'UsuarioControlador@store');
-Route::get('/usuario/{email}/{senha}', 'UsuarioControlador@show');
+Route::post('/produto', 'PostProdutoControlador@store');
+Route::get('/produto/{id}', 'PostProdutoControlador@show');
