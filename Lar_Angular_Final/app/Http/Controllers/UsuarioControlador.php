@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Usuario;
 class UsuarioControlador extends Controller
 {
@@ -33,13 +34,13 @@ class UsuarioControlador extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($email, $senha)
     {
-        $info = Usuario::find($id);
+        $info = DB::table('usuarios')->where('email', '$email')->where('senha', '$senha')->get();
 
         if (isset($info)) {
-            return $info;
+            return 200;
         }
-        return response('Produto não encontrado', 404);
+        return 404;
     }
 }

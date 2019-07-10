@@ -7,7 +7,7 @@ import { ClienteComponent } from './cliente/cliente.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'login', component: FormLoginComponent}
+  {path: 'login', component: FormLoginComponent},
   //{path: 'produtos/:id', } //falta o componente
   {path: 'sobre', component: SobreComponent},
   {path: 'cliente', component: ClienteComponent}
