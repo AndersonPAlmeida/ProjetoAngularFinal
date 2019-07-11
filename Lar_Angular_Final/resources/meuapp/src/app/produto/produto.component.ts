@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
 import { PostProduto } from '../postProduto';
 import { PostProdutosService } from '../post-produtos.service';
@@ -11,7 +12,7 @@ export class ProdutoComponent implements OnInit {
   private numID:number;
   private postProdutos: PostProduto[] = [];
 
-  constructor(public produtoService: PostProdutosService) { 
+  constructor(public produtoService: PostProdutosService, private router: Router) { 
     this.produtoService.enviarId.asObservable().subscribe(
       (valor) => {
         this.numID = valor;
@@ -24,4 +25,7 @@ export class ProdutoComponent implements OnInit {
     this.postProdutos = this.produtoService.postProduto;    
   }
 
+  vender(){
+    this.router.navigate(['/checkout/']);
+  }
 }

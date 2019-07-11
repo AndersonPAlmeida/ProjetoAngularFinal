@@ -10,7 +10,7 @@ import { LoginService } from '../login.service';
 export class ClienteComponent implements OnInit {
   
   private mostrarAlert: boolean = false;
-  private usuario:Usuario = new Usuario("", "");
+  private usuario:Usuario = new Usuario("", "", "");
 
   constructor(public loginService: LoginService) { }
 

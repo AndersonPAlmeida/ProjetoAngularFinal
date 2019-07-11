@@ -9,7 +9,7 @@ import { Usuario } from '../usuario';
 })
 export class FormLoginComponent implements OnInit {
   constructor(public loginService: LoginService) { }
-  private usuario:Usuario = new Usuario("", "");
+  private usuario:Usuario = new Usuario("", "", "");
   private mostrarAlert: boolean = false;
   ngOnInit() {
   }

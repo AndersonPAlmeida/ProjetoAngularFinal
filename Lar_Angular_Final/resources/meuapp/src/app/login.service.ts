@@ -11,7 +11,8 @@ export class LoginService {
   // private autenticador: boolean = false;
   mostrarMenu = new EventEmitter<boolean>();
   mostrarAlert = new EventEmitter<boolean>();
-
+  testeCliente = new EventEmitter<boolean>();
+  
   constructor( 
     private router: Router,
     private http: HttpClient) {}  
@@ -54,5 +55,20 @@ export class LoginService {
         }
       }
     )
+  }
+
+  checar(cpf:string, email:string){    
+    this.http.get("api/user/"+cpf+"/"+email).subscribe(
+      (retorno: any) => {
+        console.log(retorno);
+        if (retorno == 200) {
+          this.testeCliente.emit(false);
+          this.router.navigate(['/']);
+        }
+        else{
+          this.testeCliente.emit(true);
+        }                
+      }
+    );
   }
 }

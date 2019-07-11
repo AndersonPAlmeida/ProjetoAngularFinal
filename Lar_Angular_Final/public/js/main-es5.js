@@ -11,6 +11,17 @@ module.exports = "<!-- Menu -->\r\n<app-nav></app-nav>\r\n<app-nav-funcao *ngIf=
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/checkout/checkout.component.html":
+/*!****************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/checkout/checkout.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\" *ngFor=\"let p of postProdutos\">\r\n\t<div class=\"alert alert-secondary\" role=\"alert\" *ngIf=\"testeCliente\">\r\n\t\tInformações do Cliente inválidas\r\n\t</div>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n\t\t\t<figure class=\"figure\">\r\n\t\t\t\t<img src=\"/storage/{{p.arquivo}}\" class=\"figure-img img-fluid rounded\" alt=\"Produto\">\r\n\t\t\t</figure>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n\t\t\t<dl>\r\n\t\t\t\t<dt>Produto</dt>\r\n\t\t\t\t<dd>{{p.nome}}</dd>\r\n\t\t\t\t<dt>Tamanho</dt>\r\n\t\t\t\t<dd>40</dd>\r\n\t\t\t\t<dt>Preço</dt>\r\n\t\t\t\t<dd id=\"preco\">R$ {{p.preco}}</dd>\r\n\t\t\t</dl>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n\t\t\t<legend>Dados pessoais</legend>\r\n\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"nome\">Nome completo</label>\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"nome\" name=\"nome\" autofocus required>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"email\">Email</label>\r\n\t\t\t\t<input [(ngModel)]=\"usuario.email\" type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" placeholder=\"email@exemplo.com\">\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"cpf\">CPF</label>\r\n\t\t\t\t<input [(ngModel)]=\"usuario.cpf\" type=\"text\" class=\"form-control\" id=\"cpf\" name=\"cpf\" placeholder=\"000.000.000-00\" required>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"form-group custom-control custom-checkbox\">\r\n\t\t\t\t<input type=\"checkbox\" class=\"custom-control-input\" id=\"newsletter\" value=\"sim\" checked>\r\n\r\n\t\t\t\t<label class=\"custom-control-label\" for=\"newsletter\">\r\n\t\t\t\t\tQuero receber Newsletter da Mirror Fashion\r\n\t\t\t\t</label>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n\t\t\t<legend>Cartão de crédito</legend>\r\n\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"numero-cartao\">Número - CVV</label>\r\n\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"numero-cartao\" name=\"numero-cartao\"\r\n\t\t\t\t\tdata-mask=\"9999 9999 9999 9999 - 999\">\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"bandeira-cartao\">Bandeira</label>\r\n\r\n\t\t\t\t<select class=\"custom-select\" id=\"bandeira-cartao\">\r\n\t\t\t\t\t<option disabled selected>Selecione uma opção...</option>\r\n\t\t\t\t\t<option value=\"master\">MasterCard</option>\r\n\t\t\t\t\t<option value=\"visa\">VISA</option>\r\n\t\t\t\t\t<option value=\"amex\">American Express</option>\r\n\t\t\t\t</select>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"validade-cartao\">Validade</label>\r\n\r\n\t\t\t\t<input type=\"month\" class=\"form-control\" id=\"validade-cartao\" name=\"validade-cartao\">\r\n\t\t\t</div>\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<button (click)=\"vender()\" type=\"submit\" class=\"comprar btn btn-success\">Comprar</button>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/cliente/cliente.component.html":
 /*!**************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/cliente/cliente.component.html ***!
@@ -106,7 +117,7 @@ module.exports = "<!-- <a routerLink=\"/produtos/{{post.id}}\"> -->\r\n<a (click
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Início da classe produtos -->\r\n<div class=\"container produto\" *ngFor=\"let p of postProdutos\">\r\n    <div class=\"row\">\r\n        <div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n            <figure class=\"figure\">\r\n                <img src=\"/storage/{{p.arquivo}}\" class=\"figure-img img-fluid rounded\" alt=\"Produto\">\r\n            </figure>\r\n        </div>\r\n\r\n        <div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n            <div class=\"row\">\r\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\r\n                    <h1>{{p.nome}}</h1>\r\n                </div>\r\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\r\n                    <p>por apenas R$ {{p.preco}}</p>\r\n                </div>\r\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\r\n                    <p>{{p.detalhes}}</p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row detalhes\">\r\n        <div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n            <table>\r\n                <thead>\r\n                    <tr>\r\n                        <th>Característica</th>\r\n                        <th>Detalhe</th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody>\r\n                    <tr>\r\n                        <td>Modelo</td>\r\n                        <td>{{p.modelo}}</td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>Material</td>\r\n                        <td>{{p.material}}</td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>Lavagem</td>\r\n                        <td>{{p.lavagem}}</td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n        </div>\r\n\r\n        <div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n            <button (click)=\"salvar()\" type=\"submit\" class=\"comprar btn btn-success\">Comprar</button>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<!-- Início da classe produtos -->\r\n<div class=\"container produto\" *ngFor=\"let p of postProdutos\">\r\n    <div class=\"row\">\r\n        <div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n            <figure class=\"figure\">\r\n                <img src=\"/storage/{{p.arquivo}}\" class=\"figure-img img-fluid rounded\" alt=\"Produto\">\r\n            </figure>\r\n        </div>\r\n\r\n        <div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n            <div class=\"row\">\r\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\r\n                    <h1>{{p.nome}}</h1>\r\n                </div>\r\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\r\n                    <p>por apenas R$ {{p.preco}}</p>\r\n                </div>\r\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\r\n                    <p>{{p.detalhes}}</p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row detalhes\">\r\n        <div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n            <table>\r\n                <thead>\r\n                    <tr>\r\n                        <th>Característica</th>\r\n                        <th>Detalhe</th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody>\r\n                    <tr>\r\n                        <td>Modelo</td>\r\n                        <td>{{p.modelo}}</td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>Material</td>\r\n                        <td>{{p.material}}</td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>Lavagem</td>\r\n                        <td>{{p.lavagem}}</td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n        </div>\r\n\r\n        <div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n            <button (click)=\"vender()\" type=\"submit\" class=\"comprar btn btn-success\">Comprar</button>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -155,14 +166,16 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form-login/form-login.component */ "./src/app/form-login/form-login.component.ts");
-/* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
-/* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
-/* harmony import */ var _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./form-produto/form-produto.component */ "./src/app/form-produto/form-produto.component.ts");
-/* harmony import */ var _produto_produto_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./produto/produto.component */ "./src/app/produto/produto.component.ts");
+/* harmony import */ var _checkout_checkout_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./checkout/checkout.component */ "./src/app/checkout/checkout.component.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./form-login/form-login.component */ "./src/app/form-login/form-login.component.ts");
+/* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
+/* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
+/* harmony import */ var _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./form-produto/form-produto.component */ "./src/app/form-produto/form-produto.component.ts");
+/* harmony import */ var _produto_produto_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./produto/produto.component */ "./src/app/produto/produto.component.ts");
+
 
 
 
@@ -173,20 +186,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-    { path: 'login', component: _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_4__["FormLoginComponent"] },
-    { path: 'produtos/:id', component: _produto_produto_component__WEBPACK_IMPORTED_MODULE_8__["ProdutoComponent"] },
-    { path: 'sobre', component: _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_5__["SobreComponent"] },
-    { path: 'cliente', component: _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_6__["ClienteComponent"] },
-    { path: 'produto', component: _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_7__["FormProdutoComponent"] }
+    { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"] },
+    { path: 'login', component: _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_5__["FormLoginComponent"] },
+    { path: 'produtos/:id', component: _produto_produto_component__WEBPACK_IMPORTED_MODULE_9__["ProdutoComponent"] },
+    { path: 'sobre', component: _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_6__["SobreComponent"] },
+    { path: 'cliente', component: _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_7__["ClienteComponent"] },
+    { path: 'produto', component: _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_8__["FormProdutoComponent"] },
+    { path: 'checkout', component: _checkout_checkout_component__WEBPACK_IMPORTED_MODULE_1__["CheckoutComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]]
         })
     ], AppRoutingModule);
     return AppRoutingModule;
@@ -262,24 +276,26 @@ var AppComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
-/* harmony import */ var _nav_nav_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./nav/nav.component */ "./src/app/nav/nav.component.ts");
-/* harmony import */ var _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./form-login/form-login.component */ "./src/app/form-login/form-login.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _post_produto_post_produto_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./post-produto/post-produto.component */ "./src/app/post-produto/post-produto.component.ts");
-/* harmony import */ var _post_produtos_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./post-produtos.service */ "./src/app/post-produtos.service.ts");
-/* harmony import */ var _login_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./login.service */ "./src/app/login.service.ts");
-/* harmony import */ var _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./nav-funcao/nav-funcao.component */ "./src/app/nav-funcao/nav-funcao.component.ts");
-/* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
-/* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
-/* harmony import */ var _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./form-produto/form-produto.component */ "./src/app/form-produto/form-produto.component.ts");
-/* harmony import */ var _produto_produto_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./produto/produto.component */ "./src/app/produto/produto.component.ts");
+/* harmony import */ var _checkout_checkout_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./checkout/checkout.component */ "./src/app/checkout/checkout.component.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _nav_nav_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./nav/nav.component */ "./src/app/nav/nav.component.ts");
+/* harmony import */ var _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./form-login/form-login.component */ "./src/app/form-login/form-login.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _post_produto_post_produto_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./post-produto/post-produto.component */ "./src/app/post-produto/post-produto.component.ts");
+/* harmony import */ var _post_produtos_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./post-produtos.service */ "./src/app/post-produtos.service.ts");
+/* harmony import */ var _login_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./login.service */ "./src/app/login.service.ts");
+/* harmony import */ var _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./nav-funcao/nav-funcao.component */ "./src/app/nav-funcao/nav-funcao.component.ts");
+/* harmony import */ var _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./sobre/sobre.component */ "./src/app/sobre/sobre.component.ts");
+/* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
+/* harmony import */ var _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./form-produto/form-produto.component */ "./src/app/form-produto/form-produto.component.ts");
+/* harmony import */ var _produto_produto_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./produto/produto.component */ "./src/app/produto/produto.component.ts");
+
 
 
 
@@ -303,35 +319,103 @@ var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
-                _footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"],
-                _nav_nav_component__WEBPACK_IMPORTED_MODULE_8__["NavComponent"],
-                _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_9__["FormLoginComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
-                _post_produto_post_produto_component__WEBPACK_IMPORTED_MODULE_11__["PostProdutoComponent"],
-                _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_14__["NavFuncaoComponent"],
-                _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_15__["SobreComponent"],
-                _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_16__["ClienteComponent"],
-                _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_17__["FormProdutoComponent"],
-                _produto_produto_component__WEBPACK_IMPORTED_MODULE_18__["ProdutoComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_8__["FooterComponent"],
+                _nav_nav_component__WEBPACK_IMPORTED_MODULE_9__["NavComponent"],
+                _form_login_form_login_component__WEBPACK_IMPORTED_MODULE_10__["FormLoginComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
+                _post_produto_post_produto_component__WEBPACK_IMPORTED_MODULE_12__["PostProdutoComponent"],
+                _nav_funcao_nav_funcao_component__WEBPACK_IMPORTED_MODULE_15__["NavFuncaoComponent"],
+                _sobre_sobre_component__WEBPACK_IMPORTED_MODULE_16__["SobreComponent"],
+                _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_17__["ClienteComponent"],
+                _form_produto_form_produto_component__WEBPACK_IMPORTED_MODULE_18__["FormProdutoComponent"],
+                _produto_produto_component__WEBPACK_IMPORTED_MODULE_19__["ProdutoComponent"],
+                _checkout_checkout_component__WEBPACK_IMPORTED_MODULE_1__["CheckoutComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
             ],
             providers: [
-                _post_produtos_service__WEBPACK_IMPORTED_MODULE_12__["PostProdutosService"],
-                _login_service__WEBPACK_IMPORTED_MODULE_13__["LoginService"]
+                _post_produtos_service__WEBPACK_IMPORTED_MODULE_13__["PostProdutosService"],
+                _login_service__WEBPACK_IMPORTED_MODULE_14__["LoginService"]
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/checkout/checkout.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/checkout/checkout.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NoZWNrb3V0L2NoZWNrb3V0LmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/checkout/checkout.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/checkout/checkout.component.ts ***!
+  \************************************************/
+/*! exports provided: CheckoutComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckoutComponent", function() { return CheckoutComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _usuario__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../usuario */ "./src/app/usuario.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _post_produtos_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../post-produtos.service */ "./src/app/post-produtos.service.ts");
+/* harmony import */ var _login_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../login.service */ "./src/app/login.service.ts");
+
+
+
+
+
+var CheckoutComponent = /** @class */ (function () {
+    function CheckoutComponent(produtoService, loginService) {
+        this.produtoService = produtoService;
+        this.loginService = loginService;
+        this.postProdutos = [];
+        this.usuario = new _usuario__WEBPACK_IMPORTED_MODULE_1__["Usuario"]("", "", "");
+        this.testeCliente = false;
+    }
+    CheckoutComponent.prototype.ngOnInit = function () {
+        this.postProdutos = this.produtoService.postProduto;
+    };
+    CheckoutComponent.prototype.vender = function () {
+        var _this = this;
+        console.log(this.usuario.email + ' ' + this.usuario.cpf);
+        this.loginService.checar(this.usuario.cpf, this.usuario.email);
+        this.loginService.testeCliente.subscribe(function (mostrar) { return _this.testeCliente = mostrar; });
+    };
+    CheckoutComponent.ctorParameters = function () { return [
+        { type: _post_produtos_service__WEBPACK_IMPORTED_MODULE_3__["PostProdutosService"] },
+        { type: _login_service__WEBPACK_IMPORTED_MODULE_4__["LoginService"] }
+    ]; };
+    CheckoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+            selector: 'app-checkout',
+            template: __webpack_require__(/*! raw-loader!./checkout.component.html */ "./node_modules/raw-loader/index.js!./src/app/checkout/checkout.component.html"),
+            styles: [__webpack_require__(/*! ./checkout.component.css */ "./src/app/checkout/checkout.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_produtos_service__WEBPACK_IMPORTED_MODULE_3__["PostProdutosService"], _login_service__WEBPACK_IMPORTED_MODULE_4__["LoginService"]])
+    ], CheckoutComponent);
+    return CheckoutComponent;
 }());
 
 
@@ -371,7 +455,7 @@ var ClienteComponent = /** @class */ (function () {
     function ClienteComponent(loginService) {
         this.loginService = loginService;
         this.mostrarAlert = false;
-        this.usuario = new _usuario__WEBPACK_IMPORTED_MODULE_2__["Usuario"]("", "");
+        this.usuario = new _usuario__WEBPACK_IMPORTED_MODULE_2__["Usuario"]("", "", "");
     }
     ClienteComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -477,7 +561,7 @@ __webpack_require__.r(__webpack_exports__);
 var FormLoginComponent = /** @class */ (function () {
     function FormLoginComponent(loginService) {
         this.loginService = loginService;
-        this.usuario = new _usuario__WEBPACK_IMPORTED_MODULE_3__["Usuario"]("", "");
+        this.usuario = new _usuario__WEBPACK_IMPORTED_MODULE_3__["Usuario"]("", "", "");
         this.mostrarAlert = false;
     }
     FormLoginComponent.prototype.ngOnInit = function () {
@@ -646,6 +730,7 @@ var LoginService = /** @class */ (function () {
         // private autenticador: boolean = false;
         this.mostrarMenu = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.mostrarAlert = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.testeCliente = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
     }
     LoginService.prototype.logar = function (email, senha) {
         var _this = this;
@@ -678,6 +763,19 @@ var LoginService = /** @class */ (function () {
             }
             else {
                 _this.mostrarAlert.emit(true);
+            }
+        });
+    };
+    LoginService.prototype.checar = function (cpf, email) {
+        var _this = this;
+        this.http.get("api/user/" + cpf + "/" + email).subscribe(function (retorno) {
+            console.log(retorno);
+            if (retorno == 200) {
+                _this.testeCliente.emit(false);
+                _this.router.navigate(['/']);
+            }
+            else {
+                _this.testeCliente.emit(true);
             }
         });
     };
@@ -1003,15 +1101,18 @@ module.exports = ".produto {\r\n    color: #333;\r\n    line-height: 1.3;\r\n   
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProdutoComponent", function() { return ProdutoComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _post_produtos_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-produtos.service */ "./src/app/post-produtos.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _post_produtos_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../post-produtos.service */ "./src/app/post-produtos.service.ts");
+
 
 
 
 var ProdutoComponent = /** @class */ (function () {
-    function ProdutoComponent(produtoService) {
+    function ProdutoComponent(produtoService, router) {
         var _this = this;
         this.produtoService = produtoService;
+        this.router = router;
         this.postProdutos = [];
         this.produtoService.enviarId.asObservable().subscribe(function (valor) {
             _this.numID = valor;
@@ -1021,16 +1122,20 @@ var ProdutoComponent = /** @class */ (function () {
         this.produtoService.buscar(this.numID);
         this.postProdutos = this.produtoService.postProduto;
     };
+    ProdutoComponent.prototype.vender = function () {
+        this.router.navigate(['/checkout/']);
+    };
     ProdutoComponent.ctorParameters = function () { return [
-        { type: _post_produtos_service__WEBPACK_IMPORTED_MODULE_2__["PostProdutosService"] }
+        { type: _post_produtos_service__WEBPACK_IMPORTED_MODULE_3__["PostProdutosService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] }
     ]; };
     ProdutoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
             selector: 'app-produto',
             template: __webpack_require__(/*! raw-loader!./produto.component.html */ "./node_modules/raw-loader/index.js!./src/app/produto/produto.component.html"),
             styles: [__webpack_require__(/*! ./produto.component.css */ "./src/app/produto/produto.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_produtos_service__WEBPACK_IMPORTED_MODULE_2__["PostProdutosService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_produtos_service__WEBPACK_IMPORTED_MODULE_3__["PostProdutosService"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
     ], ProdutoComponent);
     return ProdutoComponent;
 }());
@@ -1096,11 +1201,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Usuario", function() { return Usuario; });
 var Usuario = /** @class */ (function () {
     function Usuario(email, senha, cpf, nome, id) {
-        this.cpf = cpf;
         this.nome = nome;
         this.id = id;
         this.email = email;
         this.senha = senha;
+        this.cpf = cpf;
     }
     Usuario.ctorParameters = function () { return [
         { type: String },

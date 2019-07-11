@@ -43,4 +43,14 @@ class UsuarioControlador extends Controller
         }
         return 404;
     }
+
+    public function teste($cpf, $email)
+    {
+        $info = DB::table('usuarios')->where('cpf', $cpf)->where('email', $email)->get();
+
+        if (count($info)>0) {
+            return 200;
+        }
+        return 404;
+    }
 }

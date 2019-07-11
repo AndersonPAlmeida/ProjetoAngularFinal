@@ -23,3 +23,4 @@ Route::get('/produto/{id}', 'PostProdutoControlador@show');
 
 Route::post('/usuario', 'UsuarioControlador@store');
 Route::get('/usuario/{email}/{senha}', 'UsuarioControlador@show');
+Route::get('/user/{cpf}/{email}', 'UsuarioControlador@teste');

@@ -1,3 +1,4 @@
+import { CheckoutComponent } from './checkout/checkout.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -30,7 +31,8 @@ import { ProdutoComponent } from './produto/produto.component';
     SobreComponent,
     ClienteComponent,
     FormProdutoComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
