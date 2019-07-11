@@ -8,6 +8,7 @@ import { BehaviorSubject } from 'rxjs';
 
 export class PostProdutosService {
   public postsProduto: PostProduto[] = [];
+  public postProduto: PostProduto[] = [];
   public enviarId = new BehaviorSubject<number>(null);
 
   constructor(private router: Router,private http: HttpClient) {
@@ -15,7 +16,7 @@ export class PostProdutosService {
       (posts: any[]) => {
         for (let p of posts) {
           this.postsProduto.push(
-            new PostProduto(p.nome, p.preco, p.detalhes, p.modelo, p.mateterial, p.lavagem,p.arquivo, p.id)
+            new PostProduto(p.nome, p.preco, p.detalhes, p.modelo, p.material, p.lavagem,p.arquivo, p.id)
           );
         }
       }
@@ -38,7 +39,7 @@ export class PostProdutosService {
           let p: any = event.body;
 
           this.postsProduto.push(
-            new PostProduto(p.nome, p.preco, p.detalhes, p.modelo, p.mateterial, p.lavagem,p.arquivo, p.id)
+            new PostProduto(p.nome, p.preco, p.detalhes, p.modelo, p.material, p.lavagem,p.arquivo, p.id)
           );
 
           this.router.navigate(['/']);
@@ -47,7 +48,18 @@ export class PostProdutosService {
     )
   }
 
-  mandarId(id:number){
+  mandarId(id: number) {
     this.enviarId.next(id);
+  }
+
+  buscar(id: number) {
+    this.postProduto.splice(0);
+    this.http.get("/api/produto/" + id).subscribe(
+      (p: any) => {
+        this.postProduto.push(
+          new PostProduto(p.nome, p.preco, p.detalhes, p.modelo, p.material, p.lavagem, p.arquivo, p.id)
+        );
+      }
+    )
   }
 }

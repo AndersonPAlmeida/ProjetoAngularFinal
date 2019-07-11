@@ -36,9 +36,9 @@ class UsuarioControlador extends Controller
      */
     public function show($email, $senha)
     {
-        $info = DB::table('usuarios')->where('email', '$email')->where('senha', '$senha')->get();
+        $info = DB::table('usuarios')->where('email', $email)->where('senha', $senha)->get();
 
-        if (isset($info)) {
+        if (count($info)>0) {
             return 200;
         }
         return 404;

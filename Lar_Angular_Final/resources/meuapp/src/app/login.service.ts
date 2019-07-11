@@ -21,11 +21,13 @@ export class LoginService {
       (retorno: any) => {
         if (retorno == 200) {
           this.mostrarMenu.emit(true);
+          this.mostrarAlert.emit(false);
+          this.router.navigate(['/']);
         }
         else{
+          this.mostrarAlert.emit(true);
           this.mostrarMenu.emit(false);
-        }        
-        this.router.navigate(['/']);
+        }                
       }
     );
   }

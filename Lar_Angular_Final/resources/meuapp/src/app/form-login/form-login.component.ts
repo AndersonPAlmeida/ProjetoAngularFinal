@@ -10,11 +10,14 @@ import { Usuario } from '../usuario';
 export class FormLoginComponent implements OnInit {
   constructor(public loginService: LoginService) { }
   private usuario:Usuario = new Usuario("", "");
-
+  private mostrarAlert: boolean = false;
   ngOnInit() {
   }
 
   logar(){
     this.loginService.logar(this.usuario.email, this.usuario.senha);
+    this.loginService.mostrarAlert.subscribe(
+      (mostrar) => this.mostrarAlert = mostrar
+    );
   }
 }

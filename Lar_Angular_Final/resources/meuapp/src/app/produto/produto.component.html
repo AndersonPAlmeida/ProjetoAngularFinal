@@ -1,46 +1,54 @@
-<p>produto works!</p>
 <!-- Início da classe produtos -->
-<div class="container">
-    <div class="produto">
-        <h1>Fuzzy Cardigan</h1>
-        <p>por apenas R$ 129,90</p>
+<div class="container produto" *ngFor="let p of postProdutos">
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <figure class="figure">
+                <img src="/storage/{{p.arquivo}}" class="figure-img img-fluid rounded" alt="Produto">
+            </figure>
+        </div>
 
-        <button class="comprar">Comprar</button>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h1>{{p.nome}}</h1>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p>por apenas R$ {{p.preco}}</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p>{{p.detalhes}}</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="detalhes">
-        <h2>Detalhes do produto</h2>
-        <p>
-            Esse é o melhor casaco de Cardigã que você já viu. Excelente
-            material italiano com estampa desenhada pelos artesãos da
-            comunidade de Krotor nas ilhas gregas. Compre já e receba hoje
-            mesmo pela nossa entrega a jato.
-        </p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Característica</th>
-                    <th>Detalhe</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Modelo</td>
-                    <td>Cardigã 7845</td>
-                </tr>
-                <tr>
-                    <td>Material</td>
-                    <td>Algodão e poliester</td>
-                </tr>
-                <tr>
-                    <td>Cores</td>
-                    <td>Azul, Rosa e Verde</td>
-                </tr>
-                <tr>
-                    <td>Lavagem</td>
-                    <td>Lavar a mão</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="row detalhes">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalhe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>{{p.modelo}}</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>{{p.material}}</td>
+                    </tr>
+                    <tr>
+                        <td>Lavagem</td>
+                        <td>{{p.lavagem}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <button (click)="salvar()" type="submit" class="comprar btn btn-success">Comprar</button>
+        </div>
     </div>
 </div>
-<!-- Fim da classe produto -->

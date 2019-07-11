@@ -8,16 +8,20 @@ import { PostProdutosService } from '../post-produtos.service';
   styleUrls: ['./produto.component.css']
 })
 export class ProdutoComponent implements OnInit {
-  constructor(public produtoService: PostProdutosService) { }
   private numID:number;
-  ngOnInit() {
+  private postProdutos: PostProduto[] = [];
+
+  constructor(public produtoService: PostProdutosService) { 
     this.produtoService.enviarId.asObservable().subscribe(
       (valor) => {
         this.numID = valor;
       }
     );
-
-    console.log(this.numID);
+  }
+  
+  ngOnInit() {    
+    this.produtoService.buscar(this.numID);
+    this.postProdutos = this.produtoService.postProduto;    
   }
 
 }

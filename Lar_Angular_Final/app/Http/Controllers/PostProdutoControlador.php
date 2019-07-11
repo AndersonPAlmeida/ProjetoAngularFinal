@@ -55,6 +55,6 @@ class PostProdutoControlador extends Controller
         if (isset($post)) {
             return $post;
         }
-        return response('Produto não encontrado', 404);
+        return  404;
     }
 }
