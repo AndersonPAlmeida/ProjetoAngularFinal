@@ -1,12 +1,14 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient, HttpEventType } from '@angular/common/http';
 import { PostProduto } from './postProduto';
 import { Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 
 export class PostProdutosService {
   public postsProduto: PostProduto[] = [];
+  public enviarId = new BehaviorSubject<number>(null);
 
   constructor(private router: Router,private http: HttpClient) {
     this.http.get("/api/").subscribe(
@@ -43,5 +45,9 @@ export class PostProdutosService {
         }
       }
     )
+  }
+
+  mandarId(id:number){
+    this.enviarId.next(id);
   }
 }

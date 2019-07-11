@@ -18,7 +18,7 @@ module.exports = "<!-- Menu -->\r\n<app-nav></app-nav>\r\n<app-nav-funcao *ngIf=
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"container\">\n    <div *ngIf=\"mostrarAlert\" class=\"alert alert-danger\" role=\"alert\">\n        Erro ao realizar o cadastro do cliente. Verifique os Dados !!!\n    </div>\n\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n        <label for=\"inputEmail4\">Email</label>\n        <input [(ngModel)]=\"usuario.email\" type=\"email\" class=\"form-control\" id=\"inputEmail4\" placeholder=\"Email\">\n        </div>\n        <div class=\"form-group col-md-6\">\n        <label for=\"inputPassword4\">Password</label>\n        <input [(ngModel)]=\"usuario.senha\" type=\"password\" class=\"form-control\" id=\"inputPassword4\" placeholder=\"Senha\">\n        </div>\n    </div>\n\n    <div class=\"form-group\">\n        <label for=\"inputAddress\">Nome</label>\n        <input [(ngModel)]=\"usuario.nome\" type=\"text\" class=\"form-control\" id=\"inputAddress\" placeholder=\"Gabriel\">\n    </div>\n\n    <div class=\"form-group\">\n        <label for=\"inputAddress2\">CPF</label>\n        <input [(ngModel)]=\"usuario.cpf\" type=\"text\" class=\"form-control\" id=\"inputAddress2\" placeholder=\"000.111.222-85\">\n    </div>\n\n    <button type=\"submit\" class=\"btn btn-success\" (click)=\"salvar()\">Sign in</button>\n</div>"
+module.exports = "\r\n<div class=\"container\">\r\n    <div *ngIf=\"mostrarAlert\" class=\"alert alert-danger\" role=\"alert\">\r\n        Erro ao realizar o cadastro do cliente. Verifique os Dados !!!\r\n    </div>\r\n\r\n    <div class=\"form-row\">\r\n        <div class=\"form-group col-md-6\">\r\n        <label for=\"inputEmail4\">Email</label>\r\n        <input [(ngModel)]=\"usuario.email\" type=\"email\" class=\"form-control\" id=\"inputEmail4\" placeholder=\"Email\">\r\n        </div>\r\n        <div class=\"form-group col-md-6\">\r\n        <label for=\"inputPassword4\">Password</label>\r\n        <input [(ngModel)]=\"usuario.senha\" type=\"password\" class=\"form-control\" id=\"inputPassword4\" placeholder=\"Senha\">\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n        <label for=\"inputAddress\">Nome</label>\r\n        <input [(ngModel)]=\"usuario.nome\" type=\"text\" class=\"form-control\" id=\"inputAddress\" placeholder=\"Gabriel\">\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n        <label for=\"inputAddress2\">CPF</label>\r\n        <input [(ngModel)]=\"usuario.cpf\" type=\"text\" class=\"form-control\" id=\"inputAddress2\" placeholder=\"000.111.222-85\">\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\" (click)=\"salvar()\">Sign in</button>\r\n</div>"
 
 /***/ }),
 
@@ -51,7 +51,7 @@ module.exports = "<div class=\"container\">\r\n    <div class=\"row\">    \r\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputProduto\">Produto</label>\n            <input [(ngModel)]=\"produto.nome\" type=\"text\" class=\"form-control\" id=\"inputProduto\" placeholder=\"Mesa\">\n        </div>\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputPreco\">Preço</label>\n            <input [(ngModel)]=\"produto.preco\" type=\"text\" class=\"form-control\" id=\"inputPreco\" placeholder=\"250,00\">\n        </div>\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputDetalhes\">Detalhes</label>\n        <input [(ngModel)]=\"produto.detalhes\" type=\"text\" class=\"form-control\" id=\"inputDetalhes\" placeholder=\"O produto é...\">\n    </div>\n    <div class=\"form-group\">\n        <label for=\"inputModelo\">Modelo</label>\n        <input [(ngModel)]=\"produto.modelo\" type=\"text\" class=\"form-control\" id=\"inputModelo\" placeholder=\"Cardigã 7405\">\n    </div>\n    <div class=\"form-row\">\n        <div class=\"form-group col-md-6\">\n            <label for=\"inputMaterial\">Material</label>\n            <input [(ngModel)]=\"produto.material\" type=\"text\" class=\"form-control\" id=\"inputMaterial\" placeholder=\"Algodão\">\n        </div>\n        <div class=\"form-group col-md-4\">\n            <label for=\"inputLavagem\">Lavagem</label>\n            <input [(ngModel)]=\"produto.lavagem\" type=\"text\" class=\"form-control\" id=\"inputLavagem\" placeholder=\"Lavar na máquina\">\n        </div>\n    </div>\n\n    <div class=\"form-row\">\n        <div class=\"custom-file col-md-6\">\n            <input (change)=\"mudouarquivo($event)\" type=\"file\" class=\"custom-file-input\" id=\"validatedCustomFile\" required>\n            <label class=\"custom-file-label\" for=\"validatedCustomFile\">Escolha um arquivo de foto...</label>\n            <div class=\"invalid-feedback\">Adicionar arquivo de foto...</div>\n        </div>\n    </div>\n    <br>\n    <div class=\"form-row\">\n        <button (click)=\"salvar()\" type=\"submit\" class=\"btn btn-primary\">Sign in</button>\n    </div>\n</div>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"form-row\">\r\n        <div class=\"form-group col-md-6\">\r\n            <label for=\"inputProduto\">Produto</label>\r\n            <input [(ngModel)]=\"produto.nome\" type=\"text\" class=\"form-control\" id=\"inputProduto\" placeholder=\"Mesa\">\r\n        </div>\r\n        <div class=\"form-group col-md-6\">\r\n            <label for=\"inputPreco\">Preço</label>\r\n            <input [(ngModel)]=\"produto.preco\" type=\"text\" class=\"form-control\" id=\"inputPreco\" placeholder=\"250,00\">\r\n        </div>\r\n    </div>\r\n    <div class=\"form-group\">\r\n        <label for=\"inputDetalhes\">Detalhes</label>\r\n        <input [(ngModel)]=\"produto.detalhes\" type=\"text\" class=\"form-control\" id=\"inputDetalhes\" placeholder=\"O produto é...\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n        <label for=\"inputModelo\">Modelo</label>\r\n        <input [(ngModel)]=\"produto.modelo\" type=\"text\" class=\"form-control\" id=\"inputModelo\" placeholder=\"Cardigã 7405\">\r\n    </div>\r\n    <div class=\"form-row\">\r\n        <div class=\"form-group col-md-6\">\r\n            <label for=\"inputMaterial\">Material</label>\r\n            <input [(ngModel)]=\"produto.material\" type=\"text\" class=\"form-control\" id=\"inputMaterial\" placeholder=\"Algodão\">\r\n        </div>\r\n        <div class=\"form-group col-md-4\">\r\n            <label for=\"inputLavagem\">Lavagem</label>\r\n            <input [(ngModel)]=\"produto.lavagem\" type=\"text\" class=\"form-control\" id=\"inputLavagem\" placeholder=\"Lavar na máquina\">\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"form-row\">\r\n        <div class=\"custom-file col-md-6\">\r\n            <input (change)=\"mudouarquivo($event)\" type=\"file\" class=\"custom-file-input\" id=\"validatedCustomFile\" required>\r\n            <label class=\"custom-file-label\" for=\"validatedCustomFile\">Escolha um arquivo de foto...</label>\r\n            <div class=\"invalid-feedback\">Adicionar arquivo de foto...</div>\r\n        </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"form-row\">\r\n        <button (click)=\"salvar()\" type=\"submit\" class=\"btn btn-primary\">Sign in</button>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -95,7 +95,7 @@ module.exports = "<div class=\"container-fluid\">\r\n    <nav class=\"navbar-lig
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<a routerLink=\"/produtos/{{post.id}}\">\r\n    <figure class=\"figure\">\r\n        <img src=\"/storage/{{post.arquivo}}\" class=\"figure-img img-fluid rounded\" alt=\"Produto\">\r\n        <figcaption class=\"figure-caption\">{{post.nome}} por R$ {{post.preco}}</figcaption>\r\n    </figure>\r\n</a>"
+module.exports = "<!-- <a routerLink=\"/produtos/{{post.id}}\"> -->\r\n<a (click)=\"selecionar()\">\r\n    <figure class=\"figure\">\r\n        <img src=\"/storage/{{post.arquivo}}\" class=\"figure-img img-fluid rounded\" alt=\"Produto\">\r\n        <figcaption class=\"figure-caption\">{{post.nome}} por R$ {{post.preco}}</figcaption>\r\n    </figure>\r\n</a>"
 
 /***/ }),
 
@@ -106,7 +106,7 @@ module.exports = "<a routerLink=\"/produtos/{{post.id}}\">\r\n    <figure class=
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>produto works!</p>\r\n<!-- Início da classe produtos -->\r\n<div class=\"container\">\r\n    <div class=\"produto\">\r\n            <h1>Fuzzy Cardigan</h1>\r\n            <p>por apenas R$ 129,90</p>\r\n            <form>\r\n                <fieldset class=\"cores\">\r\n                    <legend>Escolha a cor:</legend>\r\n                    <input type=\"radio\" name=\"cor\" value=\"verde\" id=\"verde\" checked>\r\n                    <label for=\"verde\">\r\n                        <img src=\"img/produtos/foto1-verde.png\" alt=\"Produto na cor verde\">\r\n                    </label>\r\n                    <input type=\"radio\" name=\"cor\" value=\"rosa\" id=\"rosa\">\r\n                    <label for=\"rosa\">\r\n                        <img src=\"img/produtos/foto1-rosa.png\" alt=\"Produto na cor rosa\">\r\n                    </label>\r\n                    <input type=\"radio\" name=\"cor\" value=\"azul\" id=\"azul\">\r\n                    <label for=\"azul\">\r\n                        <img src=\"img/produtos/foto1-azul.png\" alt=\"Produto na cor azul\">\r\n                    </label>\r\n                </fieldset>\r\n                <fieldset class=\"tamanhos\">\r\n                    <legend>Escolha o tamanho:</legend>\r\n                    <input type=\"range\" min=\"36\" max=\"46\" value=\"42\" step=\"2\" name=\"tamanho\" id=\"tamanho\">\r\n                    <output for=\"tamanho\" name=\"valortamanho\">42</output>\r\n                </fieldset>\r\n                <button class=\"comprar\">Comprar</button>\r\n            </form>\r\n    </div>\r\n    <div class=\"detalhes\">\r\n        <h2>Detalhes do produto</h2>\r\n        <p>\r\n            Esse é o melhor casaco de Cardigã que você já viu. Excelente\r\n        material italiano com estampa desenhada pelos artesãos da\r\n        comunidade de Krotor nas ilhas gregas. Compre já e receba hoje\r\n        mesmo pela nossa entrega a jato.\r\n        </p>\r\n        <table>\r\n            <thead>\r\n                <tr>\r\n                    <th>Característica</th>\r\n                    <th>Detalhe</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr>\r\n                    <td>Modelo</td>\r\n                    <td>Cardigã 7845</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Material</td>\r\n                    <td>Algodão e poliester</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Cores</td>\r\n                    <td>Azul, Rosa e Verde</td>\r\n                </tr>\r\n                <tr>                    \r\n                    <td>Lavagem</td>\r\n                    <td>Lavar a mão</td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n</div>\r\n<!-- Fim da classe produto -->\r\n"
+module.exports = "<p>produto works!</p>\r\n<!-- Início da classe produtos -->\r\n<div class=\"container\">\r\n    <div class=\"produto\">\r\n        <h1>Fuzzy Cardigan</h1>\r\n        <p>por apenas R$ 129,90</p>\r\n\r\n        <button class=\"comprar\">Comprar</button>\r\n    </div>\r\n    <div class=\"detalhes\">\r\n        <h2>Detalhes do produto</h2>\r\n        <p>\r\n            Esse é o melhor casaco de Cardigã que você já viu. Excelente\r\n            material italiano com estampa desenhada pelos artesãos da\r\n            comunidade de Krotor nas ilhas gregas. Compre já e receba hoje\r\n            mesmo pela nossa entrega a jato.\r\n        </p>\r\n        <table>\r\n            <thead>\r\n                <tr>\r\n                    <th>Característica</th>\r\n                    <th>Detalhe</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr>\r\n                    <td>Modelo</td>\r\n                    <td>Cardigã 7845</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Material</td>\r\n                    <td>Algodão e poliester</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Cores</td>\r\n                    <td>Azul, Rosa e Verde</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Lavagem</td>\r\n                    <td>Lavar a mão</td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n</div>\r\n<!-- Fim da classe produto -->"
 
 /***/ }),
 
@@ -806,14 +806,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _postProduto__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../postProduto */ "./src/app/postProduto.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _post_produtos_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../post-produtos.service */ "./src/app/post-produtos.service.ts");
+
+
 
 
 
 var PostProdutoComponent = /** @class */ (function () {
-    function PostProdutoComponent() {
+    // @Output() recebePoste: PostProduto = this.post;
+    function PostProdutoComponent(router, produtoService) {
+        this.router = router;
+        this.produtoService = produtoService;
     }
     PostProdutoComponent.prototype.ngOnInit = function () {
     };
+    PostProdutoComponent.prototype.selecionar = function () {
+        this.produtoService.mandarId(this.post.id);
+        this.router.navigate(['/produtos/' + this.post.id]);
+    };
+    PostProdutoComponent.ctorParameters = function () { return [
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
+        { type: _post_produtos_service__WEBPACK_IMPORTED_MODULE_4__["PostProdutosService"] }
+    ]; };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _postProduto__WEBPACK_IMPORTED_MODULE_2__["PostProduto"])
@@ -824,7 +839,7 @@ var PostProdutoComponent = /** @class */ (function () {
             template: __webpack_require__(/*! raw-loader!./post-produto.component.html */ "./node_modules/raw-loader/index.js!./src/app/post-produto/post-produto.component.html"),
             styles: [__webpack_require__(/*! ./post-produto.component.css */ "./src/app/post-produto/post-produto.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _post_produtos_service__WEBPACK_IMPORTED_MODULE_4__["PostProdutosService"]])
     ], PostProdutoComponent);
     return PostProdutoComponent;
 }());
@@ -848,6 +863,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _postProduto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./postProduto */ "./src/app/postProduto.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+
 
 
 
@@ -859,6 +876,7 @@ var PostProdutosService = /** @class */ (function () {
         this.router = router;
         this.http = http;
         this.postsProduto = [];
+        this.enviarId = new rxjs__WEBPACK_IMPORTED_MODULE_5__["BehaviorSubject"](null);
         this.http.get("/api/").subscribe(function (posts) {
             var e_1, _a;
             try {
@@ -893,6 +911,9 @@ var PostProdutosService = /** @class */ (function () {
                 _this.router.navigate(['/']);
             }
         });
+    };
+    PostProdutosService.prototype.mandarId = function (id) {
+        this.enviarId.next(id);
     };
     PostProdutosService.ctorParameters = function () { return [
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
@@ -970,20 +991,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProdutoComponent", function() { return ProdutoComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _post_produtos_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-produtos.service */ "./src/app/post-produtos.service.ts");
+
 
 
 var ProdutoComponent = /** @class */ (function () {
-    function ProdutoComponent() {
+    function ProdutoComponent(produtoService) {
+        this.produtoService = produtoService;
     }
     ProdutoComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.produtoService.enviarId.asObservable().subscribe(function (valor) {
+            _this.numID = valor;
+        });
+        console.log(this.numID);
     };
+    ProdutoComponent.ctorParameters = function () { return [
+        { type: _post_produtos_service__WEBPACK_IMPORTED_MODULE_2__["PostProdutosService"] }
+    ]; };
     ProdutoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-produto',
             template: __webpack_require__(/*! raw-loader!./produto.component.html */ "./node_modules/raw-loader/index.js!./src/app/produto/produto.component.html"),
             styles: [__webpack_require__(/*! ./produto.component.css */ "./src/app/produto/produto.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_produtos_service__WEBPACK_IMPORTED_MODULE_2__["PostProdutosService"]])
     ], ProdutoComponent);
     return ProdutoComponent;
 }());
@@ -1130,7 +1162,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Gabriel Norberto\Documents\ProjetoAngularFinal\Lar_Angular_Final\resources\meuapp\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Anderson\Documents\ProjetoAngularFinal\Lar_Angular_Final\resources\meuapp\src\main.ts */"./src/main.ts");
 
 
 /***/ })

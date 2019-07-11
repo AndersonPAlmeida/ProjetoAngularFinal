@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { PostProduto } from '../postProduto';
+import { PostProdutosService } from '../post-produtos.service';
 
 @Component({
   selector: 'app-produto',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./produto.component.css']
 })
 export class ProdutoComponent implements OnInit {
-
-  constructor() { }
-
+  constructor(public produtoService: PostProdutosService) { }
+  private numID:number;
   ngOnInit() {
+    this.produtoService.enviarId.asObservable().subscribe(
+      (valor) => {
+        this.numID = valor;
+      }
+    );
+
+    console.log(this.numID);
   }
 
 }

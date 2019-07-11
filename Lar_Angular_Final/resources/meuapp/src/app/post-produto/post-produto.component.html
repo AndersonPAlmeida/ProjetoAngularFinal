@@ -1,4 +1,5 @@
-<a routerLink="/produtos/{{post.id}}">
+<!-- <a routerLink="/produtos/{{post.id}}"> -->
+<a (click)="selecionar()">
     <figure class="figure">
         <img src="/storage/{{post.arquivo}}" class="figure-img img-fluid rounded" alt="Produto">
         <figcaption class="figure-caption">{{post.nome}} por R$ {{post.preco}}</figcaption>
